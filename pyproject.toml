@@ -14,10 +14,8 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 
 ]
-authors = [
-    { name = "Chad Lowe", email = "pfmsoft.dev@gmail.com" },
-]
-name = "pfmsoft-trips"
+authors = [{ name = "Chad Lowe", email = "pfmsoft.dev@gmail.com" }]
+name = "pfmsoft.trips"
 readme = "README.md"
 requires-python = ">=3.13"
 license = { file = "LICENSE" }
@@ -26,10 +24,10 @@ dynamic = ["version", "description"]
 # https://peps.python.org/pep-0508/#examples
 # "pfmsoft-snippets@git+https://github.com/donalchilde/pfmsoft-snippets@0.0.1"
 # "pfmsoft-snippets-indexed-string@git+https://github.com/donalchilde/pfmsoft-snippets-indexed-string@dev"
-dependencies = ["typer"]
+dependencies = ["typer", "pydantic"]
 
-[project.scripts]
-pfmsoft-trips_typer = "pfmsoft_trips.cli.main_typer:app"
+# [project.scripts]
+# pfmsoft-trips_typer = "pfmsoft_trips.cli.main_typer:app"
 
 [project.urls]
 Documentation = "https://github.com/DonalChilde/pfmsoft-trips#readme"
@@ -125,7 +123,7 @@ parallel = true
 
 [tool.scriv]
 #version = "literal: pyproject.toml: project.version"
-version = "literal: src/pfmsoft_trips/__init__.py: __version__"
+version = "literal: src/pfmsoft/trips/__init__.py: __version__"
 format = "md"
 md_header_level = "2"
 entry_title_template = "file: changelog.d/templates/entry_title_template.md.j2"
