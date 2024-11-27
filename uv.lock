@@ -441,6 +441,7 @@ name = "pfmsoft-trips"
 version = "0.0.0"
 source = { editable = "." }
 dependencies = [
+    { name = "pydantic" },
     { name = "typer" },
 ]
 
@@ -471,7 +472,10 @@ vscode-doc = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "typer" }]
+requires-dist = [
+    { name = "pydantic" },
+    { name = "typer" },
+]
 
 [package.metadata.requires-dev]
 dev = [
