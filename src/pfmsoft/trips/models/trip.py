@@ -2,7 +2,7 @@
 
 from datetime import timedelta
 
-from pydantic import AwareDatetime, BaseModel, computed_field
+from pydantic import AwareDatetime, BaseModel
 
 from .utc_datetime_validator import UtcDatetime
 
@@ -11,6 +11,14 @@ class Position(BaseModel):
     """A position, eg. CA or FO."""
 
     name: str
+
+
+class DatetimeTriple(BaseModel):
+    """Stores datetime for three locations."""
+
+    utc: UtcDatetime
+    lcl: AwareDatetime
+    hbt: AwareDatetime
 
 
 class AirportCode(BaseModel):
@@ -41,9 +49,9 @@ class Flight(BaseModel):
     eq_code: str
     number: str
     departure_station: AirportCode
-    depart: UtcDatetime
+    depart: DatetimeTriple
     arrival_station: AirportCode
-    arrive: UtcDatetime
+    arrive: DatetimeTriple
     deadhead: bool
     crewmeal: str
     eq_change: bool
@@ -51,22 +59,6 @@ class Flight(BaseModel):
 
     def block_time(self) -> timedelta:
         """Calculate the block time from arrive and depart."""
-        ...
-
-    def depart_lcl(self) -> AwareDatetime:
-        """Departure time as local time."""
-        ...
-
-    def arrive_lcl(self) -> AwareDatetime:
-        """Arrival time as local time."""
-        ...
-
-    def depart_hbt(self) -> AwareDatetime:
-        """Departure time as home base time."""
-        ...
-
-    def arrive_hbt(self) -> AwareDatetime:
-        """Arrival time as home base time."""
         ...
 
 
@@ -89,28 +81,12 @@ class Layover(BaseModel):
     """A Layover."""
 
     layover_station: AirportCode
-    start: UtcDatetime
-    end: UtcDatetime
+    start: DatetimeTriple
+    end: DatetimeTriple
     hotels: list[Hotel]
 
     def rest(self) -> timedelta:
         """Calculate rest time."""
-        ...
-
-    def start_lcl(self) -> AwareDatetime:
-        """Layover start as local time."""
-        ...
-
-    def end_lcl(self) -> AwareDatetime:
-        """Layover end as local time."""
-        ...
-
-    def start_hbt(self) -> AwareDatetime:
-        """Layover start as home base time."""
-        ...
-
-    def end_hbt(self) -> AwareDatetime:
-        """Layover end as home base time."""
         ...
 
 
@@ -118,31 +94,15 @@ class DutyPeriod(BaseModel):
     """A dutyperiod."""
 
     start_station: AirportCode
-    start: UtcDatetime
+    start: DatetimeTriple
     end_station: AirportCode
-    end: UtcDatetime
+    end: DatetimeTriple
     flights: list[Flight]
     flight_duty: timedelta
     layover: Layover | None
 
     def duty_time(self) -> timedelta:
         """Calculate duty time."""
-        ...
-
-    def start_lcl(self) -> AwareDatetime:
-        """Dutyperiod start as local time."""
-        ...
-
-    def end_lcl(self) -> AwareDatetime:
-        """Dutyperiod end as local time."""
-        ...
-
-    def start_hbt(self) -> AwareDatetime:
-        """Dutyperiod start as home base time."""
-        ...
-
-    def end_hbt(self) -> AwareDatetime:
-        """Dutyperiod end as home base time."""
         ...
 
 
@@ -155,36 +115,12 @@ class Trip(BaseModel):
     operations: list[Operation]
     special_qual: bool
     start_station: AirportCode
-    start: UtcDatetime
+    start: DatetimeTriple
     end_station: AirportCode
-    end: UtcDatetime
+    end: DatetimeTriple
     soft_time: timedelta
     dutyperiods: list[DutyPeriod]
 
     def tafb(self) -> timedelta:
         """Calculate TAFB."""
-        ...
-
-    @computed_field
-    @property
-    def start_lcl(self) -> AwareDatetime:
-        """Trip start as local time."""
-        ...
-
-    @computed_field
-    @property
-    def end_lcl(self) -> AwareDatetime:
-        """Trip end as local time."""
-        ...
-
-    @computed_field
-    @property
-    def start_hbt(self) -> AwareDatetime:
-        """Trip start as home base time."""
-        ...
-
-    @computed_field
-    @property
-    def end_hbt(self) -> AwareDatetime:
-        """Trip end as home base time."""
         ...
