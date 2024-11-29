@@ -102,7 +102,7 @@ doc = [
 vscode_doc = ["esbonio", "rst2html", "rstcheck"]
 
 [tool.ruff.lint]
-select = ["B", "UP", "D", "DOC"]
+select = ["B", "UP", "D", "DOC", "FIX"]
 # non-imperative-mood (D401)
 exclude = ["D401"]
 
