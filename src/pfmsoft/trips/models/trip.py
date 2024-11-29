@@ -33,7 +33,7 @@ class BaseEquipment(BaseModel):
     """Base and equipment in the bidding context."""
 
     base: AirportCode
-    satellite_base: AirportCode
+    satellite_base: AirportCode | None
     equipment: str
 
 
@@ -53,13 +53,13 @@ class Flight(BaseModel):
     arrival_station: AirportCode
     arrive: DatetimeTriple
     deadhead: bool
+    deadhead_code: str
     crewmeal: str
     eq_change: bool
+    flight_time: timedelta
+    operating_time: timedelta
+    soft_time: timedelta
     ground_time: timedelta
-
-    def block_time(self) -> timedelta:
-        """Calculate the block time from arrive and depart."""
-        ...
 
 
 class Transportation(BaseModel):
@@ -84,33 +84,31 @@ class Layover(BaseModel):
     start: DatetimeTriple
     end: DatetimeTriple
     hotels: list[Hotel]
-
-    def rest(self) -> timedelta:
-        """Calculate rest time."""
-        ...
+    rest: timedelta
 
 
 class DutyPeriod(BaseModel):
     """A dutyperiod."""
 
     start_station: AirportCode
-    start: DatetimeTriple
+    report: DatetimeTriple
     end_station: AirportCode
-    end: DatetimeTriple
+    release: DatetimeTriple
     flights: list[Flight]
+    duty: timedelta
     flight_duty: timedelta
+    operating_time: timedelta
+    flight_time: timedelta
+    soft_time: timedelta
     layover: Layover | None
-
-    def duty_time(self) -> timedelta:
-        """Calculate duty time."""
-        ...
 
 
 class Trip(BaseModel):
     """A trip."""
 
+    source: str
     trip_number: str
-    base: BaseEquipment
+    base_equipment: BaseEquipment
     positions: list[Position]
     operations: list[Operation]
     special_qual: bool
@@ -118,6 +116,8 @@ class Trip(BaseModel):
     start: DatetimeTriple
     end_station: AirportCode
     end: DatetimeTriple
+    flight_time: timedelta
+    operating_time: timedelta
     soft_time: timedelta
     dutyperiods: list[DutyPeriod]
 
