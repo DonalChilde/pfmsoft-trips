@@ -2,7 +2,7 @@
 
 import logging
 from collections.abc import Sequence
-from datetime import date, datetime, timedelta
+from datetime import UTC, date, datetime, time, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -40,10 +40,10 @@ def _translate_flight(
         )
         operating_time = timedelta(hours=0)
     arrive = calculate_arrival(
-        departure_station=departure_station,
+        base=base,
         arrival_station=arrival_station,
         departure=depart,
-        arrival_time=s_flight.arrival_time,
+        arrival_time_str=s_flight.arrival_time,
     )
     flight_time = arrive.utc - depart.utc
     soft_time = ST.parse_duration(s_flight.synth)
@@ -240,7 +240,7 @@ def get_airport_code_from_iata(iata: str) -> model.AirportCode:
 
 
 def trip_start_utc(start_date: date, first_report: str, tz_name: str) -> datetime:
-    """summary.
+    """Get the utc datetime for the first report of a trip.
 
     _extended_summary_
 
@@ -252,7 +252,11 @@ def trip_start_utc(start_date: date, first_report: str, tz_name: str) -> datetim
     Returns:
         _type_: _description_
     """
-    pass
+    tz_info = ZoneInfo(tz_name)
+    time_local = time.fromisoformat(first_report)
+    datetime_local = datetime.combine(date=start_date, time=time_local, tzinfo=tz_info)
+    datetime_utc = datetime_local.astimezone(UTC)
+    return datetime_utc
 
 
 def build_datetime_triple(
@@ -267,9 +271,20 @@ def build_datetime_triple(
 
 
 def calculate_arrival(
-    departure_station: model.AirportCode,
+    base: model.AirportCode,
     departure: model.DatetimeTriple,
     arrival_station: model.AirportCode,
-    arrival_time: str,
+    arrival_time_str: str,
 ) -> model.DatetimeTriple:
     """Derive the utc arrival time, and use to build DatetimeTriple."""
+    arrival_tz_info = ZoneInfo(arrival_station.tz_name)
+    departure_in_arrival_tz = departure.utc.astimezone(arrival_tz_info)
+    departure_date_in_arrival_tz = departure_in_arrival_tz.date()
+    arrival_time = time.fromisoformat(arrival_time_str)
+    arrival_local = datetime.combine(
+        date=departure_date_in_arrival_tz, time=arrival_time, tzinfo=arrival_tz_info
+    )
+    if arrival_local < departure_date_in_arrival_tz:
+        arrival_local = arrival_local + timedelta(days=1)
+    arrival_utc = arrival_local.astimezone(UTC)
+    return build_datetime_triple(utc_date=arrival_utc, base=base, local=arrival_station)
