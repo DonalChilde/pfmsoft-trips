@@ -4,6 +4,8 @@ from datetime import timedelta
 
 from pydantic import AwareDatetime, BaseModel
 
+from pfmsoft.trips.airports import airport_from_iata
+
 from .utc_datetime_validator import UtcDatetime
 
 
@@ -124,3 +126,11 @@ class Trip(BaseModel):
     def tafb(self) -> timedelta:
         """Calculate TAFB."""
         ...
+
+
+def get_airport_code_from_iata(iata: str) -> AirportCode:
+    """Get airport info from database."""
+    airport = airport_from_iata(iata=iata)
+    return AirportCode(
+        iata=airport["iata"], icao=airport["icao"], tz_name=airport["tz"]
+    )

@@ -27,11 +27,13 @@ def translate_structured_trip(s_trip: ST.StructuredTrip) -> list[model.Trip]:
 def _translate_flight(
     departure_utc: datetime, base: model.AirportCode, s_flight: ST.Flight
 ) -> model.Flight:
-    departure_station = get_airport_code_from_iata(iata=s_flight.departure_station)
+    departure_station = model.get_airport_code_from_iata(
+        iata=s_flight.departure_station
+    )
     depart = build_datetime_triple(
         utc_date=departure_utc, base=base, local=departure_station
     )
-    arrival_station = get_airport_code_from_iata(iata=s_flight.arrival_station)
+    arrival_station = model.get_airport_code_from_iata(iata=s_flight.arrival_station)
     try:
         operating_time = ST.parse_duration(s_flight.block)
     except ValueError as e:
@@ -71,13 +73,18 @@ def _translate_flight(
 
 
 def _translate_flights(
-    dutyperiod_report: datetime, base: model.AirportCode, s_flights: Sequence[ST.Flight]
+    dutyperiod_report_utc: datetime,
+    base: model.AirportCode,
+    s_flights: Sequence[ST.Flight],
 ) -> list[model.Flight]:
     flights: list[model.Flight] = []
-    departure_utc = (
-        dutyperiod_report  # FIXME this needs to be offset to real departure time
-    )
     for s_flight in s_flights:
+        departure_tz_name = model.airport_from_iata(s_flight.departure_station)["tz"]
+        departure_utc = next_local_time_in_utc(
+            utc_start=dutyperiod_report_utc,
+            next_nieve=time.fromisoformat(s_flight.departure_time),
+            next_tz_name=departure_tz_name,
+        )
         flight = _translate_flight(
             departure_utc=departure_utc, base=base, s_flight=s_flight
         )
@@ -89,10 +96,12 @@ def _translate_flights(
 def _translate_dutyperiod(
     report_utc: datetime, base: model.AirportCode, s_dutyperiod: ST.DutyPeriod
 ) -> model.DutyPeriod:
-    start_station = get_airport_code_from_iata(
+    start_station = model.get_airport_code_from_iata(
         iata=s_dutyperiod.flights[0].departure_station
     )
-    end_station = get_airport_code_from_iata(s_dutyperiod.flights[-1].arrival_station)
+    end_station = model.get_airport_code_from_iata(
+        s_dutyperiod.flights[-1].arrival_station
+    )
     report = build_datetime_triple(utc_date=report_utc, base=base, local=start_station)
     duty = ST.parse_duration(s_dutyperiod.duty)
     release_utc = report.utc + duty
@@ -101,7 +110,7 @@ def _translate_dutyperiod(
     operating_time = ST.parse_duration(s_dutyperiod.block)
     soft_time = ST.parse_duration(s_dutyperiod.synth)
     flights = _translate_flights(
-        dutyperiod_report=report.utc, base=base, s_flights=s_dutyperiod.flights
+        dutyperiod_report_utc=report.utc, base=base, s_flights=s_dutyperiod.flights
     )
     layover = _translate_layover(
         dutyperiod_release=release.utc, base=base, s_layover=s_dutyperiod.layover
@@ -145,7 +154,7 @@ def _translate_layover(
     if s_layover is None:
         return None
     hotels = _translate_hotels(s_hotels=s_layover.hotels)
-    layover_station = get_airport_code_from_iata(iata=s_layover.city)
+    layover_station = model.get_airport_code_from_iata(iata=s_layover.city)
     start = build_datetime_triple(
         utc_date=dutyperiod_release, base=base, local=layover_station
     )
@@ -175,7 +184,7 @@ def _translate_hotels(s_hotels: Sequence[ST.Hotel]) -> list[model.Hotel]:
 
 def _transate_trip(s_trip: ST.StructuredTrip, start_date: date) -> model.Trip:
     """Translate a StructuredTrip that starts on a particular date."""
-    base_airport = get_airport_code_from_iata(s_trip.page_footer.base)
+    base_airport = model.get_airport_code_from_iata(s_trip.page_footer.base)
 
     first_report = s_trip.dutyperiods[0].report_time
     trip_start = trip_start_utc(
@@ -192,7 +201,7 @@ def _transate_trip(s_trip: ST.StructuredTrip, start_date: date) -> model.Trip:
     operating_time = ST.parse_duration(s_trip.block)
     soft_time = ST.parse_duration(s_trip.synth)
     try:
-        satellite_base = get_airport_code_from_iata(
+        satellite_base = model.get_airport_code_from_iata(
             iata=s_trip.page_footer.satellite_base
         )
     except ValueError:
@@ -233,24 +242,18 @@ def _translate_trips(s_trip: ST.StructuredTrip) -> list[model.Trip]:
     return trips
 
 
-def get_airport_code_from_iata(iata: str) -> model.AirportCode:
-    """Get airport info from database."""
-    # raise ValueError if not found.
-    pass
-
-
 def trip_start_utc(start_date: date, first_report: str, tz_name: str) -> datetime:
     """Get the utc datetime for the first report of a trip.
 
     _extended_summary_
 
     Args:
-        start_date (_type_): _description_
-        first_report (_type_): _description_
-        tz_name (_type_): _description_
+        start_date (date): _description_
+        first_report (str): _description_
+        tz_name (str): _description_
 
     Returns:
-        _type_: _description_
+        datetime: The start of the trip in UTC.
     """
     tz_info = ZoneInfo(tz_name)
     time_local = time.fromisoformat(first_report)
@@ -277,14 +280,42 @@ def calculate_arrival(
     arrival_time_str: str,
 ) -> model.DatetimeTriple:
     """Derive the utc arrival time, and use to build DatetimeTriple."""
-    arrival_tz_info = ZoneInfo(arrival_station.tz_name)
-    departure_in_arrival_tz = departure.utc.astimezone(arrival_tz_info)
-    departure_date_in_arrival_tz = departure_in_arrival_tz.date()
-    arrival_time = time.fromisoformat(arrival_time_str)
-    arrival_local = datetime.combine(
-        date=departure_date_in_arrival_tz, time=arrival_time, tzinfo=arrival_tz_info
+    arrival_utc = next_local_time_in_utc(
+        utc_start=departure.utc,
+        next_nieve=time.fromisoformat(arrival_time_str),
+        next_tz_name=arrival_station.tz_name,
     )
-    if arrival_local < departure_date_in_arrival_tz:
-        arrival_local = arrival_local + timedelta(days=1)
-    arrival_utc = arrival_local.astimezone(UTC)
     return build_datetime_triple(utc_date=arrival_utc, base=base, local=arrival_station)
+
+
+def next_local_time_in_utc(
+    utc_start: datetime, next_nieve: time, next_tz_name: str
+) -> datetime:
+    """Calculate the next occurance of a time in UTC.
+
+    Calulate the next occurance of a datetime in UTC when only the
+    following information is know.
+
+    Args:
+        utc_start (datetime): The datetime in UTC to reference
+        next_nieve (time): The nieve `time` that falls after `utc_start`
+        next_tz_name (str): The timezone name of `next_nieve`.
+
+    Returns:
+        datetime: The next datetime in UTC
+    """
+    offset_tz = ZoneInfo(next_tz_name)
+    next_datetime = datetime.combine(
+        date=utc_start.astimezone(offset_tz).date(),
+        time=next_nieve,
+        tzinfo=offset_tz,
+    )
+    if next_datetime < utc_start.astimezone(offset_tz):
+        # increment utc_start if `next_datetime` comes before a localized utc_start.
+        utc_start = utc_start + timedelta(days=1)
+        next_datetime = datetime.combine(
+            date=utc_start.astimezone(offset_tz).date(),
+            time=next_nieve,
+            tzinfo=offset_tz,
+        )
+    return next_datetime.astimezone(UTC)

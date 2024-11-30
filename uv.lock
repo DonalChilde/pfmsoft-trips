@@ -2,6 +2,15 @@ version = 1
 requires-python = ">=3.13"
 
 [[package]]
+name = "airportsdata"
+version = "20241001"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ff/75/0af9b73babfec14df1395ca60e2a174e887c5d515e823c39a60f27bbbb30/airportsdata-20241001.tar.gz", hash = "sha256:fa0bd143b4f4be3557cb892fa0612ef210fd91a92bd720b4d8221de576a4fa00", size = 903075 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/af/57/57635b0af4a23723b2b43109aa4eae7395d346d1eed8a00691cf3acfc5bd/airportsdata-20241001-py3-none-any.whl", hash = "sha256:67d71cf2c5378cc17ff66b62b1e11aa2444043949c894543ac8fd8dafce192fd", size = 912677 },
+]
+
+[[package]]
 name = "alabaster"
 version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -472,6 +481,7 @@ name = "pfmsoft-trips"
 version = "0.0.0"
 source = { editable = "." }
 dependencies = [
+    { name = "airportsdata" },
     { name = "pbs-parse" },
     { name = "pydantic" },
     { name = "typer" },
@@ -505,6 +515,7 @@ vscode-doc = [
 
 [package.metadata]
 requires-dist = [
+    { name = "airportsdata" },
     { name = "pbs-parse", git = "https://github.com/donalchilde/pbs-parse?rev=dev" },
     { name = "pydantic" },
     { name = "typer" },
