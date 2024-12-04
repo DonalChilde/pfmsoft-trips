@@ -34,18 +34,18 @@ def _translate_flight(
         utc_date=departure_utc, base=base, local=departure_station
     )
     arrival_station = model.get_airport_code_from_iata(iata=s_flight.arrival_station)
-    try:
-        operating_time = ST.parse_duration(s_flight.block)
-    except ValueError as e:
-        logger.info(
-            f"Error parsing block duration {s_flight.block}. Is this a deadhead? {e}"
-        )
-        operating_time = timedelta(hours=0)
+    # try:
+    operating_time = ST.parse_duration(s_flight.block)
+    # except ValueError as e:
+    #     logger.info(
+    #         f"Error parsing block duration {s_flight.block}. Is this a deadhead? {e}"
+    #     )
+    #     operating_time = timedelta(hours=0)
     arrive = calculate_arrival(
         base=base,
         arrival_station=arrival_station,
         departure=depart,
-        arrival_time_str=s_flight.arrival_time,
+        arrival_time_str=s_flight.arrival_time.lcl,
     )
     flight_time = arrive.utc - depart.utc
     soft_time = ST.parse_duration(s_flight.synth)
@@ -55,7 +55,7 @@ def _translate_flight(
         ground_time = timedelta(hours=0)
 
     return model.Flight(
-        eq_code=s_flight.eq_code,
+        eq_code=s_flight.equipment_code,
         number=s_flight.flight_number,
         departure_station=departure_station,
         depart=depart,
@@ -82,7 +82,7 @@ def _translate_flights(
         departure_tz_name = model.airport_from_iata(s_flight.departure_station)["tz"]
         departure_utc = next_local_time_in_utc(
             utc_start=dutyperiod_report_utc,
-            next_nieve=time.fromisoformat(s_flight.departure_time),
+            next_nieve=time.fromisoformat(s_flight.departure_time.lcl),
             next_tz_name=departure_tz_name,
         )
         flight = _translate_flight(
@@ -188,7 +188,9 @@ def _transate_trip(s_trip: ST.StructuredTrip, start_date: date) -> model.Trip:
 
     first_report = s_trip.dutyperiods[0].report_time
     trip_start = trip_start_utc(
-        start_date=start_date, first_report=first_report, tz_name=base_airport.tz_name
+        start_date=start_date,
+        first_report=first_report.lcl,
+        tz_name=base_airport.tz_name,
     )
     dutyperiods = _translate_dutyperiods(
         first_report=trip_start,
@@ -217,7 +219,7 @@ def _transate_trip(s_trip: ST.StructuredTrip, start_date: date) -> model.Trip:
         base_equipment=base_equipment,
         positions=positions,
         operations=operations,
-        special_qual=bool(s_trip.qualifications),
+        special_qual=s_trip.special_qual,
         start_station=dutyperiods[0].start_station,
         start=dutyperiods[0].report,
         end_station=dutyperiods[-1].end_station,
