@@ -1,0 +1,182 @@
+{
+ "source": "7cc92a41-6909-4e7e-bd28-ee1b4ff18609",
+ "number": "10891",
+ "ops_count": "2",
+ "special_qual": false,
+ "block": "12.32",
+ "synth": "3.13",
+ "total_pay": "15.45",
+ "tafb": "44.11",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "PHX",
+  "satellite_base": "",
+  "equipment": "320",
+  "division": "INTL",
+  "page": "3320"
+ },
+ "uuid": "ed73d65e-824d-4801-bf66-c77dab9304d9",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [],
+ "dutyperiods": [
+  {
+   "uuid": "f4e1fb33-121e-4082-b536-58f337345e78",
+   "idx": "1",
+   "report_time": {
+    "lcl": "1054",
+    "hbt": "1054"
+   },
+   "release_time": {
+    "lcl": "1606",
+    "hbt": "1906"
+   },
+   "block": "6.42",
+   "synth": "0.00",
+   "total_pay": "6.42",
+   "duty": "8.12",
+   "flight_duty": "7.42",
+   "layover": {
+    "uuid": "1da0663c-9cb3-4800-b8a7-54a7b8c781a5",
+    "rest": "28.39",
+    "city": "KOA",
+    "hotels": [
+     {
+      "name": "COURTYARD KING KAMEHAMEHA",
+      "phone": "18083292911",
+      "transportation": [
+       {
+        "name": "VIP TRANSPORTATION\u2212 KOA",
+        "phone": "8088712702"
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "uuid": "42a4a805-8e26-48ca-898e-102599dfef41",
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "26",
+     "flight_number": "663",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "PHX",
+     "departure_time": {
+      "lcl": "1154",
+      "hbt": "1154"
+     },
+     "crew_meal": "",
+     "arrival_station": "KOA",
+     "arrival_time": {
+      "lcl": "1536",
+      "hbt": "1836"
+     },
+     "block": "6.42",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "uuid": "85fce21f-78e5-4b78-bd3b-e741ea4a6eca",
+   "idx": "2",
+   "report_time": {
+    "lcl": "2045",
+    "hbt": "2345"
+   },
+   "release_time": {
+    "lcl": "0705",
+    "hbt": "0705"
+   },
+   "block": "5.50",
+   "synth": "0.00",
+   "total_pay": "5.50",
+   "duty": "7.20",
+   "flight_duty": "6.50",
+   "layover": null,
+   "flights": [
+    {
+     "uuid": "20aa03f9-a094-4acb-b342-3f016693a173",
+     "dutyperiod_idx": "2",
+     "idx": "1",
+     "depart_day": "2",
+     "arrive_day": "3",
+     "equipment_code": "26",
+     "flight_number": "602",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "KOA",
+     "departure_time": {
+      "lcl": "2145",
+      "hbt": "0045"
+     },
+     "crew_meal": "",
+     "arrival_station": "PHX",
+     "arrival_time": {
+      "lcl": "0635",
+      "hbt": "0635"
+     },
+     "block": "5.50",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "17",
+  "18",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212"
+ ]
+}

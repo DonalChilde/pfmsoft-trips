@@ -1,0 +1,234 @@
+{
+ "source": "27edb1b5-47ed-4d92-993c-e29b45fa6a27",
+ "number": "25556",
+ "ops_count": "1",
+ "special_qual": false,
+ "block": "10.47",
+ "synth": "0.00",
+ "total_pay": "10.47",
+ "tafb": "30.04",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "BOS",
+  "satellite_base": "",
+  "equipment": "737",
+  "division": "DOM",
+  "page": "103"
+ },
+ "uuid": "b3fd7248-4bf8-41ce-a3d2-7dd9412b3b84",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [],
+ "dutyperiods": [
+  {
+   "uuid": "3329fddf-0443-4ac1-beff-13e0d0ecc47c",
+   "idx": "1",
+   "report_time": {
+    "lcl": "1635",
+    "hbt": "1635"
+   },
+   "release_time": {
+    "lcl": "2238",
+    "hbt": "0038"
+   },
+   "block": "5.45",
+   "synth": "0.00",
+   "total_pay": "5.45",
+   "duty": "8.03",
+   "flight_duty": "7.48",
+   "layover": {
+    "uuid": "ec2d414b-b7bf-4be3-80e4-682ed8be0aa5",
+    "rest": "12.57",
+    "city": "DEN",
+    "hotels": [
+     {
+      "name": "HYATT PLACE PENA STATION",
+      "phone": "7204054321",
+      "transportation": [
+       {
+        "name": "SHUTTLE",
+        "phone": ""
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "uuid": "884cea67-a9b0-48cf-99ed-3196e536c8c9",
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "45",
+     "flight_number": "2877",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "BOS",
+     "departure_time": {
+      "lcl": "1735",
+      "hbt": "1735"
+     },
+     "crew_meal": "",
+     "arrival_station": "ORD",
+     "arrival_time": {
+      "lcl": "1937",
+      "hbt": "2037"
+     },
+     "block": "3.02",
+     "synth": "0.00",
+     "ground": "1.03",
+     "equipment_change": false
+    },
+    {
+     "uuid": "ce62d0cb-54d1-4850-bd6b-1735eb3cf80c",
+     "dutyperiod_idx": "1",
+     "idx": "2",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "45",
+     "flight_number": "1387",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "ORD",
+     "departure_time": {
+      "lcl": "2040",
+      "hbt": "2140"
+     },
+     "crew_meal": "",
+     "arrival_station": "DEN",
+     "arrival_time": {
+      "lcl": "2223",
+      "hbt": "0023"
+     },
+     "block": "2.43",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "uuid": "a385e91c-e5b2-4ac1-8e5c-97491c2a56f9",
+   "idx": "2",
+   "report_time": {
+    "lcl": "1135",
+    "hbt": "1335"
+   },
+   "release_time": {
+    "lcl": "2239",
+    "hbt": "2239"
+   },
+   "block": "5.02",
+   "synth": "0.00",
+   "total_pay": "5.02",
+   "duty": "9.04",
+   "flight_duty": "8.49",
+   "layover": null,
+   "flights": [
+    {
+     "uuid": "d0a28ffa-240d-42ad-b99c-4db82d48e9b7",
+     "dutyperiod_idx": "2",
+     "idx": "1",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "65",
+     "flight_number": "2404",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "DEN",
+     "departure_time": {
+      "lcl": "1235",
+      "hbt": "1435"
+     },
+     "crew_meal": "",
+     "arrival_station": "ORD",
+     "arrival_time": {
+      "lcl": "1608",
+      "hbt": "1708"
+     },
+     "block": "2.33",
+     "synth": "0.00",
+     "ground": "2.47",
+     "equipment_change": true
+    },
+    {
+     "uuid": "9ea59cff-e76d-40c3-9c7d-e262e5a857b8",
+     "dutyperiod_idx": "2",
+     "idx": "2",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "45",
+     "flight_number": "407",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "ORD",
+     "departure_time": {
+      "lcl": "1855",
+      "hbt": "1955"
+     },
+     "crew_meal": "",
+     "arrival_station": "BOS",
+     "arrival_time": {
+      "lcl": "2224",
+      "hbt": "2224"
+     },
+     "block": "2.29",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "1"
+ ]
+}

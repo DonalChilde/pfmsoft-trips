@@ -1,0 +1,234 @@
+{
+ "source": "a66282d9-237a-4bfa-9e89-506427772f85",
+ "number": "25554",
+ "ops_count": "1",
+ "special_qual": false,
+ "block": "10.44",
+ "synth": "0.00",
+ "total_pay": "10.44",
+ "tafb": "32.08",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "BOS",
+  "satellite_base": "",
+  "equipment": "737",
+  "division": "DOM",
+  "page": "103"
+ },
+ "uuid": "46f8d47f-fba7-44ca-bd67-36b1089d4e49",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [],
+ "dutyperiods": [
+  {
+   "uuid": "c1e450ce-3952-4f05-9f6a-304c470d9c26",
+   "idx": "1",
+   "report_time": {
+    "lcl": "1505",
+    "hbt": "1505"
+   },
+   "release_time": {
+    "lcl": "2231",
+    "hbt": "2331"
+   },
+   "block": "5.55",
+   "synth": "0.00",
+   "total_pay": "5.55",
+   "duty": "8.26",
+   "flight_duty": "8.11",
+   "layover": {
+    "uuid": "01eab609-31f5-490e-8254-30f1d972206f",
+    "rest": "14.39",
+    "city": "OKC",
+    "hotels": [
+     {
+      "name": "SHERATON OKLAHOMA CITY DOWNTOWN",
+      "phone": "14052352780",
+      "transportation": [
+       {
+        "name": "AIRPORT EXPRESS",
+        "phone": "4056813311"
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "uuid": "ecbbb7e5-e8ba-44ec-a852-b4e5ceafbad9",
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "45",
+     "flight_number": "1439",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "BOS",
+     "departure_time": {
+      "lcl": "1605",
+      "hbt": "1605"
+     },
+     "crew_meal": "",
+     "arrival_station": "DFW",
+     "arrival_time": {
+      "lcl": "1948",
+      "hbt": "2048"
+     },
+     "block": "4.43",
+     "synth": "0.00",
+     "ground": "1.16",
+     "equipment_change": false
+    },
+    {
+     "uuid": "ba380a55-064d-4d59-841e-cedd595e464a",
+     "dutyperiod_idx": "1",
+     "idx": "2",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "45",
+     "flight_number": "1458",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "DFW",
+     "departure_time": {
+      "lcl": "2104",
+      "hbt": "2204"
+     },
+     "crew_meal": "",
+     "arrival_station": "OKC",
+     "arrival_time": {
+      "lcl": "2216",
+      "hbt": "2316"
+     },
+     "block": "1.12",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "uuid": "d5598bf4-b6a2-4e02-a80a-3fe4c86d00ae",
+   "idx": "2",
+   "report_time": {
+    "lcl": "1310",
+    "hbt": "1410"
+   },
+   "release_time": {
+    "lcl": "2313",
+    "hbt": "2313"
+   },
+   "block": "4.49",
+   "synth": "0.00",
+   "total_pay": "4.49",
+   "duty": "9.03",
+   "flight_duty": "8.48",
+   "layover": null,
+   "flights": [
+    {
+     "uuid": "adf63d19-5d23-4fb5-b5e0-47b0d9b0fd12",
+     "dutyperiod_idx": "2",
+     "idx": "1",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "45",
+     "flight_number": "1626",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "OKC",
+     "departure_time": {
+      "lcl": "1410",
+      "hbt": "1510"
+     },
+     "crew_meal": "",
+     "arrival_station": "CLT",
+     "arrival_time": {
+      "lcl": "1745",
+      "hbt": "1745"
+     },
+     "block": "2.35",
+     "synth": "0.00",
+     "ground": "2.59",
+     "equipment_change": true
+    },
+    {
+     "uuid": "9e7f44de-1576-499f-b1d0-e12b03d466d3",
+     "dutyperiod_idx": "2",
+     "idx": "2",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "45",
+     "flight_number": "1843",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "CLT",
+     "departure_time": {
+      "lcl": "2044",
+      "hbt": "2044"
+     },
+     "crew_meal": "",
+     "arrival_station": "BOS",
+     "arrival_time": {
+      "lcl": "2258",
+      "hbt": "2258"
+     },
+     "block": "2.14",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "1"
+ ]
+}

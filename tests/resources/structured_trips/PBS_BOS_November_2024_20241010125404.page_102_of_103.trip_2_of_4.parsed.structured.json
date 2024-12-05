@@ -1,0 +1,410 @@
+{
+ "source": "b42f743f-d439-428d-aa50-0a576245bc48",
+ "number": "25551",
+ "ops_count": "1",
+ "special_qual": false,
+ "block": "23.44",
+ "synth": "0.00",
+ "total_pay": "23.44",
+ "tafb": "81.40",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "BOS",
+  "satellite_base": "",
+  "equipment": "737",
+  "division": "DOM",
+  "page": "102"
+ },
+ "uuid": "886f309e-3f35-4317-b6b4-c79e7a5d2936",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [],
+ "dutyperiods": [
+  {
+   "uuid": "22c8af27-dedb-4f7c-a1ee-d281613b1c34",
+   "idx": "1",
+   "report_time": {
+    "lcl": "0753",
+    "hbt": "0753"
+   },
+   "release_time": {
+    "lcl": "1814",
+    "hbt": "1914"
+   },
+   "block": "6.53",
+   "synth": "0.00",
+   "total_pay": "6.53",
+   "duty": "11.21",
+   "flight_duty": "11.06",
+   "layover": {
+    "uuid": "b0cc4651-3b1e-4a36-bdad-330c4a5d68ae",
+    "rest": "12.46",
+    "city": "AUS",
+    "hotels": [
+     {
+      "name": "HILTON GARDEN INN AUSTIN AIRPORT",
+      "phone": "15123867474",
+      "transportation": [
+       {
+        "name": "SHUTTLE",
+        "phone": ""
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "uuid": "faf9400a-0bea-4f02-b8c8-c676941ef5fe",
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "45",
+     "flight_number": "1259",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "BOS",
+     "departure_time": {
+      "lcl": "0853",
+      "hbt": "0853"
+     },
+     "crew_meal": "",
+     "arrival_station": "MIA",
+     "arrival_time": {
+      "lcl": "1233",
+      "hbt": "1233"
+     },
+     "block": "3.40",
+     "synth": "0.00",
+     "ground": "3.13",
+     "equipment_change": true
+    },
+    {
+     "uuid": "aeebbae4-0ca2-4766-a831-af0ae9194108",
+     "dutyperiod_idx": "1",
+     "idx": "2",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "45",
+     "flight_number": "3193",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "MIA",
+     "departure_time": {
+      "lcl": "1546",
+      "hbt": "1546"
+     },
+     "crew_meal": "",
+     "arrival_station": "AUS",
+     "arrival_time": {
+      "lcl": "1759",
+      "hbt": "1859"
+     },
+     "block": "3.13",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "uuid": "58cb4d3f-abb4-48c8-b32f-e3c1f8506058",
+   "idx": "2",
+   "report_time": {
+    "lcl": "0700",
+    "hbt": "0800"
+   },
+   "release_time": {
+    "lcl": "1420",
+    "hbt": "1520"
+   },
+   "block": "5.05",
+   "synth": "0.00",
+   "total_pay": "5.05",
+   "duty": "7.20",
+   "flight_duty": "7.05",
+   "layover": {
+    "uuid": "6ca7a840-1a26-4495-a3ac-8c633dbea2cf",
+    "rest": "15.27",
+    "city": "AUS",
+    "hotels": [
+     {
+      "name": "HOTEL INFO IN CCI/CREW PORTAL",
+      "phone": "",
+      "transportation": [
+       {
+        "name": "TRANS INFO IN CCI/CREW PORTAL",
+        "phone": ""
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "uuid": "44dc0a91-692d-45a2-ba80-b611e36faf1a",
+     "dutyperiod_idx": "2",
+     "idx": "1",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "65",
+     "flight_number": "2592",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "AUS",
+     "departure_time": {
+      "lcl": "0800",
+      "hbt": "0900"
+     },
+     "crew_meal": "",
+     "arrival_station": "SJD",
+     "arrival_time": {
+      "lcl": "0945",
+      "hbt": "1145"
+     },
+     "block": "2.45",
+     "synth": "0.00",
+     "ground": "1.00",
+     "equipment_change": false
+    },
+    {
+     "uuid": "a553642f-abc6-402f-afcb-305a7de415d5",
+     "dutyperiod_idx": "2",
+     "idx": "2",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "65",
+     "flight_number": "2592",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "SJD",
+     "departure_time": {
+      "lcl": "1045",
+      "hbt": "1245"
+     },
+     "crew_meal": "",
+     "arrival_station": "AUS",
+     "arrival_time": {
+      "lcl": "1405",
+      "hbt": "1505"
+     },
+     "block": "2.20",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "uuid": "5d3ccd01-7559-43bb-841c-a745368a1414",
+   "idx": "3",
+   "report_time": {
+    "lcl": "0547",
+    "hbt": "0647"
+   },
+   "release_time": {
+    "lcl": "1158",
+    "hbt": "1458"
+   },
+   "block": "4.51",
+   "synth": "0.00",
+   "total_pay": "4.51",
+   "duty": "8.11",
+   "flight_duty": "7.56",
+   "layover": {
+    "uuid": "aef4437b-f075-4039-9287-22eb53e74400",
+    "rest": "17.02",
+    "city": "FAT",
+    "hotels": [
+     {
+      "name": "HOTEL INFO IN CCI/CREW PORTAL",
+      "phone": "",
+      "transportation": [
+       {
+        "name": "TRANS INFO IN CCI/CREW PORTAL",
+        "phone": ""
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "uuid": "dfdc5179-3abd-4505-9db4-3c83911e582e",
+     "dutyperiod_idx": "3",
+     "idx": "1",
+     "depart_day": "3",
+     "arrive_day": "3",
+     "equipment_code": "45",
+     "flight_number": "1595",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "AUS",
+     "departure_time": {
+      "lcl": "0647",
+      "hbt": "0747"
+     },
+     "crew_meal": "",
+     "arrival_station": "DFW",
+     "arrival_time": {
+      "lcl": "0800",
+      "hbt": "0900"
+     },
+     "block": "1.13",
+     "synth": "0.00",
+     "ground": "2.05",
+     "equipment_change": true
+    },
+    {
+     "uuid": "d8ab2f8c-d090-426f-86dd-6629d4b79f9e",
+     "dutyperiod_idx": "3",
+     "idx": "2",
+     "depart_day": "3",
+     "arrive_day": "3",
+     "equipment_code": "65",
+     "flight_number": "1770",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "DFW",
+     "departure_time": {
+      "lcl": "1005",
+      "hbt": "1105"
+     },
+     "crew_meal": "",
+     "arrival_station": "FAT",
+     "arrival_time": {
+      "lcl": "1143",
+      "hbt": "1443"
+     },
+     "block": "3.38",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "uuid": "c273a7f5-a9e2-4b97-bd5e-9b94783c11b6",
+   "idx": "4",
+   "report_time": {
+    "lcl": "0500",
+    "hbt": "0800"
+   },
+   "release_time": {
+    "lcl": "1733",
+    "hbt": "1733"
+   },
+   "block": "6.55",
+   "synth": "0.00",
+   "total_pay": "6.55",
+   "duty": "9.33",
+   "flight_duty": "9.18",
+   "layover": null,
+   "flights": [
+    {
+     "uuid": "0d26801e-cfe1-4e88-a433-5ef303b937fd",
+     "dutyperiod_idx": "4",
+     "idx": "1",
+     "depart_day": "4",
+     "arrive_day": "4",
+     "equipment_code": "45",
+     "flight_number": "2653",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "FAT",
+     "departure_time": {
+      "lcl": "0600",
+      "hbt": "0900"
+     },
+     "crew_meal": "",
+     "arrival_station": "DFW",
+     "arrival_time": {
+      "lcl": "1113",
+      "hbt": "1213"
+     },
+     "block": "3.13",
+     "synth": "0.00",
+     "ground": "1.23",
+     "equipment_change": true
+    },
+    {
+     "uuid": "59a0915e-d754-41ed-894b-3fe3126e7338",
+     "dutyperiod_idx": "4",
+     "idx": "2",
+     "depart_day": "4",
+     "arrive_day": "4",
+     "equipment_code": "45",
+     "flight_number": "1401",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "DFW",
+     "departure_time": {
+      "lcl": "1236",
+      "hbt": "1336"
+     },
+     "crew_meal": "",
+     "arrival_station": "BOS",
+     "arrival_time": {
+      "lcl": "1718",
+      "hbt": "1718"
+     },
+     "block": "3.42",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "1"
+ ]
+}
