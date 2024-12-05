@@ -9,7 +9,7 @@ from pydantic.functional_validators import AfterValidator
 
 def check_utc(v: AwareDatetime) -> AwareDatetime:
     """Ensure value is an aware datetime that is UTC."""
-    assert v.tzinfo != UTC, f"Value is a non-utc datetime. {v!r}"
+    assert v.tzinfo == UTC, f"Value is a non-utc datetime. {v!r}"
     return v
 
 
