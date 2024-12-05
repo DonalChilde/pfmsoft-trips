@@ -8,6 +8,7 @@ from typing import Annotated
 
 import typer
 
+from pfmsoft.trips.cli import translate_cli
 
 logger = logging.getLogger(__name__)
 
@@ -18,7 +19,7 @@ def app_dir() -> Path:
     """Get the system approiate application directory.
 
     Returns:
-        _type_: The app dir.
+        Path: The app dir.
     """
     return Path(typer.get_app_dir(app_name=APP_NAME))
 
@@ -42,6 +43,11 @@ def default_options(
 
 
 app = typer.Typer(callback=default_options)
+app.add_typer(
+    translate_cli.app,
+    name="translate",
+    help="Translate trips in other formats to pfmsoft-trips.",
+)
 
 
 if __name__ == "__main__":
