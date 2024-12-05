@@ -1,10 +1,12 @@
 """Pydantic model of a trip."""
 
 from datetime import timedelta
+from pathlib import Path
 
 from pydantic import AwareDatetime, BaseModel
 
 from pfmsoft.trips.airports import airport_from_iata
+from pfmsoft.trips.snippets.file.check_file import check_file
 
 from .utc_datetime_validator import UtcDatetime
 
@@ -127,6 +129,19 @@ class Trip(BaseModel):
         """Calculate TAFB."""
         ...
 
+    @staticmethod
+    def default_file_name(trip: "Trip") -> str:
+        """The default file name for a Trip."""
+        if trip.base_equipment.satellite_base is None:
+            base_fragment = (
+                f"{trip.base_equipment.base.iata}_{trip.base_equipment.equipment}"
+            )
+        else:
+            base_fragment = f"{trip.base_equipment.base.iata}_{trip.base_equipment.satellite_base.iata}_{trip.base_equipment.equipment}"
+
+        file_name = f"{trip.start.lcl.date().isoformat()}_{base_fragment}_{trip.trip_number}.json"
+        return file_name
+
 
 def get_airport_code_from_iata(iata: str) -> AirportCode:
     """Get airport info from database."""
@@ -134,3 +149,9 @@ def get_airport_code_from_iata(iata: str) -> AirportCode:
     return AirportCode(
         iata=airport["iata"], icao=airport["icao"], tz_name=airport["tz"]
     )
+
+
+def serialize_trip(path_out: Path, trip: Trip):
+    """Save a trip to json."""
+    check_file(path_out=path_out)
+    path_out.write_text(trip.model_dump_json(indent=1))
