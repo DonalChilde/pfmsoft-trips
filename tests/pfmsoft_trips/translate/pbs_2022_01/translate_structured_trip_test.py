@@ -9,10 +9,8 @@ from pbs_parse.pbs_2022_01.models.structured import STRUCTURED_TRIP_SERIALIZER
 
 from pfmsoft.trips.models.trip import serialize_trip
 from pfmsoft.trips.translate import pbs_2022_01 as pbs
-from tests.resources.models.file_comparison import FileComparison
 from tests.resources.models.file_system_resource import FileResource
 from tests.resources.pbs_2022_01.structured_trips import STRUCTURED_TRIPS_ANCHOR
-from tests.resources.trips import TRIPS_ANCHOR
 
 logger = logging.getLogger(__name__)
 
@@ -28,11 +26,8 @@ items = [
         pathname="2024-11-01_2024-12-01/PBS_LAX_November_2024_20241010125833_partial.page_4_of_4.trip_5_of_5.parsed.structured.json",
     ),
 ]
-PARSE_ONLY = False
 
 
-# tests/resources/pbs_2022_01/structured_trips/2024-11-01_2024-12-01/PBS_LAX_November_2024_20241010125833_partial.page_1_of_4.trip_1_of_4.parsed.structured.json
-# tests/resources/pbs_2022_01/structured_trips/2024-11-01_2024-12-01/PBS_LAX_November_2024_20241010125833_partial.page_4_of_4.trip_5_of_5.parsed.structured.json
 def idfn(val: FileResource) -> str:
     """Return a custom test name for parameterized tests."""
     return "File_vs_obj_"
