@@ -1,0 +1,143 @@
+{
+ "source": "c85f9222-bfe4-5841-95c9-d7c5150903d5",
+ "number": "8035",
+ "ops_count": "2",
+ "special_qual": false,
+ "block": "6.24",
+ "synth": "0.00",
+ "total_pay": "6.24",
+ "tafb": "9.24",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "LAX",
+  "satellite_base": "ONT",
+  "equipment": "320",
+  "division": "INTL",
+  "page": "2062"
+ },
+ "uuid": "e243092f-09d7-595c-9381-a89b5041b595",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [],
+ "dutyperiods": [
+  {
+   "idx": "1",
+   "report_time": {
+    "lcl": "0505",
+    "hbt": "0505"
+   },
+   "release_time": {
+    "lcl": "1429",
+    "hbt": "1429"
+   },
+   "block": "6.24",
+   "synth": "0.00",
+   "total_pay": "6.24",
+   "duty": "9.24",
+   "flight_duty": "8.54",
+   "layover": null,
+   "flights": [
+    {
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "64",
+     "flight_number": "1412",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "ONT",
+     "departure_time": {
+      "lcl": "0605",
+      "hbt": "0605"
+     },
+     "crew_meal": "",
+     "arrival_station": "DFW",
+     "arrival_time": {
+      "lcl": "1106",
+      "hbt": "0906"
+     },
+     "block": "3.01",
+     "synth": "0.00",
+     "ground": "1.30",
+     "equipment_change": true
+    },
+    {
+     "dutyperiod_idx": "1",
+     "idx": "2",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "64",
+     "flight_number": "2635",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "DFW",
+     "departure_time": {
+      "lcl": "1236",
+      "hbt": "1036"
+     },
+     "crew_meal": "",
+     "arrival_station": "ONT",
+     "arrival_time": {
+      "lcl": "1359",
+      "hbt": "1359"
+     },
+     "block": "3.23",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "30",
+  "1"
+ ]
+}

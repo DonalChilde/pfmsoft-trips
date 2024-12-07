@@ -1,0 +1,286 @@
+{
+ "source": "7bb0a1c8-8a09-56b1-bfc4-273e100d6707",
+ "number": "8587",
+ "ops_count": "1",
+ "special_qual": false,
+ "block": "13.29",
+ "synth": "2.16",
+ "total_pay": "15.45",
+ "tafb": "47.38",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "LAX",
+  "satellite_base": "",
+  "equipment": "320",
+  "division": "INTL",
+  "page": "2035"
+ },
+ "uuid": "b3ccd89c-9983-54d7-a985-a5f0ec994e86",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [],
+ "dutyperiods": [
+  {
+   "idx": "1",
+   "report_time": {
+    "lcl": "2055",
+    "hbt": "2055"
+   },
+   "release_time": {
+    "lcl": "0602",
+    "hbt": "0302"
+   },
+   "block": "4.37",
+   "synth": "0.00",
+   "total_pay": "4.37",
+   "duty": "6.07",
+   "flight_duty": "5.37",
+   "layover": {
+    "rest": "11.13",
+    "city": "CLT",
+    "hotels": [
+     {
+      "name": "HYATT PLACE CLT LAKE POINTE",
+      "phone": "17043578555",
+      "transportation": [
+       {
+        "name": "SHUTTLE",
+        "phone": ""
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "2",
+     "equipment_code": "63",
+     "flight_number": "2511",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "LAX",
+     "departure_time": {
+      "lcl": "2155",
+      "hbt": "2155"
+     },
+     "crew_meal": "",
+     "arrival_station": "CLT",
+     "arrival_time": {
+      "lcl": "0532",
+      "hbt": "0232"
+     },
+     "block": "4.37",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "2",
+   "report_time": {
+    "lcl": "1715",
+    "hbt": "1415"
+   },
+   "release_time": {
+    "lcl": "2313",
+    "hbt": "2013"
+   },
+   "block": "2.49",
+   "synth": "0.10",
+   "total_pay": "2.59",
+   "duty": "5.58",
+   "flight_duty": "5.28",
+   "layover": {
+    "rest": "12.36",
+    "city": "PVD",
+    "hotels": [
+     {
+      "name": "FAIRFIELD INN AND SUITES PVD",
+      "phone": "4017320900",
+      "transportation": [
+       {
+        "name": "SHUTTLE",
+        "phone": ""
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "2",
+     "idx": "1",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "73",
+     "flight_number": "423",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "CLT",
+     "departure_time": {
+      "lcl": "1815",
+      "hbt": "1515"
+     },
+     "crew_meal": "",
+     "arrival_station": "PHL",
+     "arrival_time": {
+      "lcl": "1951",
+      "hbt": "1651"
+     },
+     "block": "1.36",
+     "synth": "0.00",
+     "ground": "1.39",
+     "equipment_change": true
+    },
+    {
+     "dutyperiod_idx": "2",
+     "idx": "2",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "92",
+     "flight_number": "3129",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "PHL",
+     "departure_time": {
+      "lcl": "2130",
+      "hbt": "1830"
+     },
+     "crew_meal": "",
+     "arrival_station": "PVD",
+     "arrival_time": {
+      "lcl": "2243",
+      "hbt": "1943"
+     },
+     "block": "1.13",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "3",
+   "report_time": {
+    "lcl": "1149",
+    "hbt": "0849"
+   },
+   "release_time": {
+    "lcl": "2033",
+    "hbt": "2033"
+   },
+   "block": "6.03",
+   "synth": "1.42",
+   "total_pay": "7.45",
+   "duty": "11.44",
+   "flight_duty": "11.14",
+   "layover": null,
+   "flights": [
+    {
+     "dutyperiod_idx": "3",
+     "idx": "1",
+     "depart_day": "3",
+     "arrive_day": "3",
+     "equipment_code": "00",
+     "flight_number": "5363",
+     "deadhead": true,
+     "deadhead_code": "TE",
+     "departure_station": "PVD",
+     "departure_time": {
+      "lcl": "1219",
+      "hbt": "0919"
+     },
+     "crew_meal": "",
+     "arrival_station": "DCA",
+     "arrival_time": {
+      "lcl": "1401",
+      "hbt": "1101"
+     },
+     "block": "0.00",
+     "synth": "1.42",
+     "ground": "2.59",
+     "equipment_change": true
+    },
+    {
+     "dutyperiod_idx": "3",
+     "idx": "2",
+     "depart_day": "3",
+     "arrive_day": "3",
+     "equipment_code": "26",
+     "flight_number": "1162",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "DCA",
+     "departure_time": {
+      "lcl": "1700",
+      "hbt": "1400"
+     },
+     "crew_meal": "",
+     "arrival_station": "LAX",
+     "arrival_time": {
+      "lcl": "2003",
+      "hbt": "2003"
+     },
+     "block": "6.03",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "26",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212"
+ ]
+}

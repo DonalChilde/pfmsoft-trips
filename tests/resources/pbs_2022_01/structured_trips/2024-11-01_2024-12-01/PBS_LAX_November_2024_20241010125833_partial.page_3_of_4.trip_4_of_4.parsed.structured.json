@@ -1,0 +1,286 @@
+{
+ "source": "0c9de44b-40eb-50e6-ba0f-d5354262e176",
+ "number": "8590",
+ "ops_count": "1",
+ "special_qual": false,
+ "block": "15.02",
+ "synth": "5.58",
+ "total_pay": "21.00",
+ "tafb": "73.33",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "LAX",
+  "satellite_base": "",
+  "equipment": "320",
+  "division": "INTL",
+  "page": "2035"
+ },
+ "uuid": "09276f11-d18b-5e94-a04d-adc0753ba841",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [],
+ "dutyperiods": [
+  {
+   "idx": "1",
+   "report_time": {
+    "lcl": "2159",
+    "hbt": "2159"
+   },
+   "release_time": {
+    "lcl": "0715",
+    "hbt": "0415"
+   },
+   "block": "4.46",
+   "synth": "0.00",
+   "total_pay": "4.46",
+   "duty": "6.16",
+   "flight_duty": "5.46",
+   "layover": {
+    "rest": "11.25",
+    "city": "MCO",
+    "hotels": [
+     {
+      "name": "MARRIOTT MCO AIRPORT",
+      "phone": "14078519000",
+      "transportation": [
+       {
+        "name": "SHUTTLE",
+        "phone": ""
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "2",
+     "equipment_code": "64",
+     "flight_number": "2091",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "LAX",
+     "departure_time": {
+      "lcl": "2259",
+      "hbt": "2259"
+     },
+     "crew_meal": "",
+     "arrival_station": "MCO",
+     "arrival_time": {
+      "lcl": "0645",
+      "hbt": "0345"
+     },
+     "block": "4.46",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "2",
+   "report_time": {
+    "lcl": "1840",
+    "hbt": "1540"
+   },
+   "release_time": {
+    "lcl": "0041",
+    "hbt": "2141"
+   },
+   "block": "3.18",
+   "synth": "0.00",
+   "total_pay": "3.18",
+   "duty": "6.01",
+   "flight_duty": "5.31",
+   "layover": {
+    "rest": "39.56",
+    "city": "PIT",
+    "hotels": [
+     {
+      "name": "WESTIN CONVENTION CENTER",
+      "phone": "14122813700",
+      "transportation": [
+       {
+        "name": "THREE RIVERS LIMO",
+        "phone": "4122212006"
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "2",
+     "idx": "1",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "63",
+     "flight_number": "2502",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "MCO",
+     "departure_time": {
+      "lcl": "1940",
+      "hbt": "1640"
+     },
+     "crew_meal": "",
+     "arrival_station": "CLT",
+     "arrival_time": {
+      "lcl": "2132",
+      "hbt": "1832"
+     },
+     "block": "1.52",
+     "synth": "0.00",
+     "ground": "1.13",
+     "equipment_change": false
+    },
+    {
+     "dutyperiod_idx": "2",
+     "idx": "2",
+     "depart_day": "2",
+     "arrive_day": "3",
+     "equipment_code": "63",
+     "flight_number": "1962",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "CLT",
+     "departure_time": {
+      "lcl": "2245",
+      "hbt": "1945"
+     },
+     "crew_meal": "",
+     "arrival_station": "PIT",
+     "arrival_time": {
+      "lcl": "0011",
+      "hbt": "2111"
+     },
+     "block": "1.26",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "3",
+   "report_time": {
+    "lcl": "1637",
+    "hbt": "1337"
+   },
+   "release_time": {
+    "lcl": "2332",
+    "hbt": "2332"
+   },
+   "block": "6.58",
+   "synth": "0.00",
+   "total_pay": "6.58",
+   "duty": "9.55",
+   "flight_duty": "9.25",
+   "layover": null,
+   "flights": [
+    {
+     "dutyperiod_idx": "3",
+     "idx": "1",
+     "depart_day": "4",
+     "arrive_day": "4",
+     "equipment_code": "77",
+     "flight_number": "2319",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "PIT",
+     "departure_time": {
+      "lcl": "1737",
+      "hbt": "1437"
+     },
+     "crew_meal": "",
+     "arrival_station": "CLT",
+     "arrival_time": {
+      "lcl": "1908",
+      "hbt": "1608"
+     },
+     "block": "1.31",
+     "synth": "0.00",
+     "ground": "1.27",
+     "equipment_change": true
+    },
+    {
+     "dutyperiod_idx": "3",
+     "idx": "2",
+     "depart_day": "4",
+     "arrive_day": "4",
+     "equipment_code": "26",
+     "flight_number": "2017",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "CLT",
+     "departure_time": {
+      "lcl": "2035",
+      "hbt": "1735"
+     },
+     "crew_meal": "",
+     "arrival_station": "LAX",
+     "arrival_time": {
+      "lcl": "2302",
+      "hbt": "2302"
+     },
+     "block": "5.27",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "26",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212"
+ ]
+}

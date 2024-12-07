@@ -1,12 +1,12 @@
 {
- "source": "5690ae06-cdb8-4ede-a699-25ae0ca581fb",
- "number": "25550",
- "ops_count": "1",
+ "source": "f79c8119-4dd5-5620-b327-d9eb59e96693",
+ "number": "8034",
+ "ops_count": "6",
  "special_qual": false,
- "block": "7.05",
+ "block": "6.24",
  "synth": "0.00",
- "total_pay": "7.05",
- "tafb": "11.09",
+ "total_pay": "6.24",
+ "tafb": "9.24",
  "external": {
   "effective_from": "2024-11-01",
   "effective_to": "2024-12-01"
@@ -24,13 +24,13 @@
  "page_footer": {
   "issued": "09OCT2024",
   "effective": "01NOV2024",
-  "base": "BOS",
-  "satellite_base": "",
-  "equipment": "737",
-  "division": "DOM",
-  "page": "102"
+  "base": "LAX",
+  "satellite_base": "ONT",
+  "equipment": "320",
+  "division": "INTL",
+  "page": "2062"
  },
- "uuid": "fee333fa-3276-40fe-9eb8-b8c5db6f81ef",
+ "uuid": "00a53621-a6d3-5a72-8e73-5d90e995ea89",
  "positions": [
   "CA",
   "FO"
@@ -38,71 +38,68 @@
  "operations": [],
  "dutyperiods": [
   {
-   "uuid": "e46b8287-76ce-4de2-86d5-313aa69ddc28",
    "idx": "1",
    "report_time": {
-    "lcl": "0700",
-    "hbt": "0700"
+    "lcl": "0505",
+    "hbt": "0505"
    },
    "release_time": {
-    "lcl": "1809",
-    "hbt": "1809"
+    "lcl": "1429",
+    "hbt": "1429"
    },
-   "block": "7.05",
+   "block": "6.24",
    "synth": "0.00",
-   "total_pay": "7.05",
-   "duty": "11.09",
-   "flight_duty": "10.54",
+   "total_pay": "6.24",
+   "duty": "9.24",
+   "flight_duty": "8.54",
    "layover": null,
    "flights": [
     {
-     "uuid": "91a653c6-bfee-424c-9ca4-1335845c4f6e",
      "dutyperiod_idx": "1",
      "idx": "1",
      "depart_day": "1",
      "arrive_day": "1",
-     "equipment_code": "45",
-     "flight_number": "2538",
+     "equipment_code": "64",
+     "flight_number": "1412",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "BOS",
+     "departure_station": "ONT",
      "departure_time": {
-      "lcl": "0800",
-      "hbt": "0800"
+      "lcl": "0605",
+      "hbt": "0605"
      },
      "crew_meal": "",
-     "arrival_station": "MIA",
+     "arrival_station": "DFW",
      "arrival_time": {
-      "lcl": "1146",
-      "hbt": "1146"
+      "lcl": "1106",
+      "hbt": "0906"
      },
-     "block": "3.46",
+     "block": "3.01",
      "synth": "0.00",
-     "ground": "2.49",
+     "ground": "1.30",
      "equipment_change": true
     },
     {
-     "uuid": "a4081b77-85c2-4f74-957b-4c4194bcc8e1",
      "dutyperiod_idx": "1",
      "idx": "2",
      "depart_day": "1",
      "arrive_day": "1",
-     "equipment_code": "25",
-     "flight_number": "1883",
+     "equipment_code": "64",
+     "flight_number": "2635",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "MIA",
+     "departure_station": "DFW",
      "departure_time": {
-      "lcl": "1435",
-      "hbt": "1435"
+      "lcl": "1236",
+      "hbt": "1036"
      },
      "crew_meal": "",
-     "arrival_station": "BOS",
+     "arrival_station": "ONT",
      "arrival_time": {
-      "lcl": "1754",
-      "hbt": "1754"
+      "lcl": "1359",
+      "hbt": "1359"
      },
-     "block": "3.19",
+     "block": "3.23",
      "synth": "0.00",
      "ground": "0.00",
      "equipment_change": false
@@ -126,6 +123,14 @@
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",
+  "16",
+  "17",
+  "18",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "21",
+  "22",
+  "23",
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",
@@ -133,14 +138,6 @@
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",
-  "\u2212\u2212",
-  "\u2212\u2212",
-  "\u2212\u2212",
-  "\u2212\u2212",
-  "\u2212\u2212",
-  "\u2212\u2212",
-  "\u2212\u2212",
-  "\u2212\u2212",
-  "1"
+  "\u2212\u2212"
  ]
 }

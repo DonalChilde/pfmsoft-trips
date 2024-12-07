@@ -1,0 +1,177 @@
+{
+ "source": "7292b6f7-5139-5484-83af-7cfced7035df",
+ "number": "770",
+ "ops_count": "2",
+ "special_qual": false,
+ "block": "21.53",
+ "synth": "0.00",
+ "total_pay": "21.53",
+ "tafb": "46.38",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "LAX",
+  "satellite_base": "",
+  "equipment": "777",
+  "division": "INTL",
+  "page": "1912"
+ },
+ "uuid": "62496f56-c41a-5b29-8575-678c13d5a353",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [],
+ "dutyperiods": [
+  {
+   "idx": "1",
+   "report_time": {
+    "lcl": "1725",
+    "hbt": "1725"
+   },
+   "release_time": {
+    "lcl": "1230",
+    "hbt": "0530"
+   },
+   "block": "10.35",
+   "synth": "0.00",
+   "total_pay": "10.35",
+   "duty": "12.05",
+   "flight_duty": "11.35",
+   "layover": {
+    "rest": "21.45",
+    "city": "LHR",
+    "hotels": [
+     {
+      "name": "PARK PLAZA VICTORIA LONDON",
+      "phone": "443334006142",
+      "transportation": [
+       {
+        "name": "COMET CAR HIRE (CCH) LTD",
+        "phone": "442088979984"
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "2",
+     "equipment_code": "82",
+     "flight_number": "134",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "LAX",
+     "departure_time": {
+      "lcl": "1825",
+      "hbt": "1825"
+     },
+     "crew_meal": "",
+     "arrival_station": "LHR",
+     "arrival_time": {
+      "lcl": "1200",
+      "hbt": "0500"
+     },
+     "block": "10.35",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "2",
+   "report_time": {
+    "lcl": "1015",
+    "hbt": "0215"
+   },
+   "release_time": {
+    "lcl": "1503",
+    "hbt": "1503"
+   },
+   "block": "11.18",
+   "synth": "0.00",
+   "total_pay": "11.18",
+   "duty": "12.48",
+   "flight_duty": "12.18",
+   "layover": null,
+   "flights": [
+    {
+     "dutyperiod_idx": "2",
+     "idx": "1",
+     "depart_day": "3",
+     "arrive_day": "3",
+     "equipment_code": "83",
+     "flight_number": "137",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "LHR",
+     "departure_time": {
+      "lcl": "1115",
+      "hbt": "0315"
+     },
+     "crew_meal": "",
+     "arrival_station": "LAX",
+     "arrival_time": {
+      "lcl": "1433",
+      "hbt": "1433"
+     },
+     "block": "11.18",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "1",
+  "2",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212"
+ ]
+}

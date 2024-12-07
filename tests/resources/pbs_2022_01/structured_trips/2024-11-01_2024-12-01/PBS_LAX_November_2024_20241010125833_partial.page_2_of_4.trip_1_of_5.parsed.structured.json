@@ -1,0 +1,307 @@
+{
+ "source": "58a99039-51a9-5b27-88a6-bc91672c4512",
+ "number": "761",
+ "ops_count": "25",
+ "special_qual": false,
+ "block": "26.00",
+ "synth": "6.30",
+ "total_pay": "32.30",
+ "tafb": "95.20",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "LAX",
+  "satellite_base": "",
+  "equipment": "777",
+  "division": "INTL",
+  "page": "1912"
+ },
+ "uuid": "b04de4a0-8a13-5e08-9764-6488fd7c158f",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [
+  "JAPANESE"
+ ],
+ "dutyperiods": [
+  {
+   "idx": "1",
+   "report_time": {
+    "lcl": "1200",
+    "hbt": "1200"
+   },
+   "release_time": {
+    "lcl": "1804",
+    "hbt": "1604"
+   },
+   "block": "0.00",
+   "synth": "3.04",
+   "total_pay": "3.04",
+   "duty": "4.04",
+   "flight_duty": "0.00",
+   "layover": {
+    "rest": "15.11",
+    "city": "DFW",
+    "hotels": [
+     {
+      "name": "ALOFT EULESS",
+      "phone": "8175714211",
+      "transportation": [
+       {
+        "name": "SHUTTLE",
+        "phone": ""
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "63",
+     "flight_number": "1658",
+     "deadhead": true,
+     "deadhead_code": "AA",
+     "departure_station": "LAX",
+     "departure_time": {
+      "lcl": "1230",
+      "hbt": "1230"
+     },
+     "crew_meal": "",
+     "arrival_station": "DFW",
+     "arrival_time": {
+      "lcl": "1734",
+      "hbt": "1534"
+     },
+     "block": "0.00",
+     "synth": "3.04",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "2",
+   "report_time": {
+    "lcl": "0915",
+    "hbt": "0715"
+   },
+   "release_time": {
+    "lcl": "1600",
+    "hbt": "2300"
+   },
+   "block": "14.15",
+   "synth": "0.00",
+   "total_pay": "14.15",
+   "duty": "15.45",
+   "flight_duty": "15.15",
+   "layover": {
+    "rest": "24.30",
+    "city": "NRT",
+    "hotels": [
+     {
+      "name": "HILTON TOKYO NARITA AIRPORT",
+      "phone": "81476331121",
+      "transportation": [
+       {
+        "name": "RYOSO GRAND SERVICE",
+        "phone": "81476353773"
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "2",
+     "idx": "1",
+     "depart_day": "2",
+     "arrive_day": "3",
+     "equipment_code": "83",
+     "flight_number": "61",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "DFW",
+     "departure_time": {
+      "lcl": "1015",
+      "hbt": "0815"
+     },
+     "crew_meal": "",
+     "arrival_station": "NRT",
+     "arrival_time": {
+      "lcl": "1530",
+      "hbt": "2230"
+     },
+     "block": "14.15",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "3",
+   "report_time": {
+    "lcl": "1630",
+    "hbt": "2330"
+   },
+   "release_time": {
+    "lcl": "1445",
+    "hbt": "1245"
+   },
+   "block": "11.45",
+   "synth": "0.00",
+   "total_pay": "11.45",
+   "duty": "13.15",
+   "flight_duty": "12.45",
+   "layover": {
+    "rest": "18.09",
+    "city": "DFW",
+    "hotels": [
+     {
+      "name": "AC HOTEL FORT WORTH",
+      "phone": "6822910700",
+      "transportation": [
+       {
+        "name": "SKYHOP GLOBAL",
+        "phone": "9544000412"
+       }
+      ]
+     },
+     {
+      "name": "COURTYARD BLACKSTONE FTW                18178858700",
+      "phone": "",
+      "transportation": [
+       {
+        "name": "SKYHOP GLOBAL",
+        "phone": "9544000412"
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "3",
+     "idx": "1",
+     "depart_day": "4",
+     "arrive_day": "4",
+     "equipment_code": "83",
+     "flight_number": "60",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "NRT",
+     "departure_time": {
+      "lcl": "1730",
+      "hbt": "0030"
+     },
+     "crew_meal": "",
+     "arrival_station": "DFW",
+     "arrival_time": {
+      "lcl": "1415",
+      "hbt": "1215"
+     },
+     "block": "11.45",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "4",
+   "report_time": {
+    "lcl": "0854",
+    "hbt": "0654"
+   },
+   "release_time": {
+    "lcl": "1120",
+    "hbt": "1120"
+   },
+   "block": "0.00",
+   "synth": "3.26",
+   "total_pay": "3.26",
+   "duty": "4.26",
+   "flight_duty": "0.00",
+   "layover": null,
+   "flights": [
+    {
+     "dutyperiod_idx": "4",
+     "idx": "1",
+     "depart_day": "5",
+     "arrive_day": "5",
+     "equipment_code": "26",
+     "flight_number": "2978",
+     "deadhead": true,
+     "deadhead_code": "AA",
+     "departure_station": "DFW",
+     "departure_time": {
+      "lcl": "0924",
+      "hbt": "0724"
+     },
+     "crew_meal": "",
+     "arrival_station": "LAX",
+     "arrival_time": {
+      "lcl": "1050",
+      "hbt": "1050"
+     },
+     "block": "0.00",
+     "synth": "3.26",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "20",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "\u2212\u2212",
+  "29",
+  "30",
+  "\u2212\u2212"
+ ]
+}

@@ -1,0 +1,177 @@
+{
+ "source": "4ce7c4e1-1d8e-5617-84ab-f9e59a508f7a",
+ "number": "8585",
+ "ops_count": "1",
+ "special_qual": false,
+ "block": "11.46",
+ "synth": "0.00",
+ "total_pay": "11.46",
+ "tafb": "29.50",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "LAX",
+  "satellite_base": "",
+  "equipment": "320",
+  "division": "INTL",
+  "page": "2035"
+ },
+ "uuid": "eb48734b-7f56-5dbc-832b-479fa563a382",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [],
+ "dutyperiods": [
+  {
+   "idx": "1",
+   "report_time": {
+    "lcl": "1430",
+    "hbt": "1430"
+   },
+   "release_time": {
+    "lcl": "0026",
+    "hbt": "2126"
+   },
+   "block": "5.26",
+   "synth": "0.00",
+   "total_pay": "5.26",
+   "duty": "6.56",
+   "flight_duty": "6.26",
+   "layover": {
+    "rest": "15.04",
+    "city": "JFK",
+    "hotels": [
+     {
+      "name": "TWA HOTEL",
+      "phone": "2128069000",
+      "transportation": [
+       {
+        "name": "SHUTTLE",
+        "phone": ""
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "80",
+     "flight_number": "32",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "LAX",
+     "departure_time": {
+      "lcl": "1530",
+      "hbt": "1530"
+     },
+     "crew_meal": "",
+     "arrival_station": "JFK",
+     "arrival_time": {
+      "lcl": "2356",
+      "hbt": "2056"
+     },
+     "block": "5.26",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "2",
+   "report_time": {
+    "lcl": "1530",
+    "hbt": "1230"
+   },
+   "release_time": {
+    "lcl": "2020",
+    "hbt": "2020"
+   },
+   "block": "6.20",
+   "synth": "0.00",
+   "total_pay": "6.20",
+   "duty": "7.50",
+   "flight_duty": "7.20",
+   "layover": null,
+   "flights": [
+    {
+     "dutyperiod_idx": "2",
+     "idx": "1",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "80",
+     "flight_number": "306",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "JFK",
+     "departure_time": {
+      "lcl": "1630",
+      "hbt": "1330"
+     },
+     "crew_meal": "",
+     "arrival_station": "LAX",
+     "arrival_time": {
+      "lcl": "1950",
+      "hbt": "1950"
+     },
+     "block": "6.20",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "26",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212"
+ ]
+}

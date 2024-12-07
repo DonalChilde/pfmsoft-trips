@@ -1,12 +1,12 @@
 {
- "source": "152536c2-a691-4c33-ac25-10bba8d2ea10",
- "number": "25553",
- "ops_count": "1",
+ "source": "3edb2805-6093-5916-b666-43780d126e38",
+ "number": "8063",
+ "ops_count": "2",
  "special_qual": false,
- "block": "16.25",
- "synth": "0.06",
- "total_pay": "16.31",
- "tafb": "57.50",
+ "block": "16.12",
+ "synth": "0.08",
+ "total_pay": "16.20",
+ "tafb": "57.13",
  "external": {
   "effective_from": "2024-11-01",
   "effective_to": "2024-12-01"
@@ -24,13 +24,13 @@
  "page_footer": {
   "issued": "09OCT2024",
   "effective": "01NOV2024",
-  "base": "BOS",
-  "satellite_base": "",
-  "equipment": "737",
-  "division": "DOM",
-  "page": "102"
+  "base": "LAX",
+  "satellite_base": "ONT",
+  "equipment": "320",
+  "division": "INTL",
+  "page": "2062"
  },
- "uuid": "24ad4114-c76c-4c24-9cc1-5792218a7798",
+ "uuid": "341aae92-9df9-5efb-85bd-0dcd0b724a4e",
  "positions": [
   "CA",
   "FO"
@@ -38,33 +38,31 @@
  "operations": [],
  "dutyperiods": [
   {
-   "uuid": "d9f9d5e4-78cc-4518-9a6f-a5a5f0531a7d",
    "idx": "1",
    "report_time": {
-    "lcl": "1323",
-    "hbt": "1323"
+    "lcl": "1153",
+    "hbt": "1153"
    },
    "release_time": {
-    "lcl": "2259",
-    "hbt": "2259"
+    "lcl": "2308",
+    "hbt": "2008"
    },
-   "block": "7.10",
+   "block": "5.12",
    "synth": "0.00",
-   "total_pay": "7.10",
-   "duty": "9.36",
-   "flight_duty": "9.21",
+   "total_pay": "5.12",
+   "duty": "8.15",
+   "flight_duty": "7.45",
    "layover": {
-    "uuid": "9d1f39eb-6cb9-49c9-8638-1e47bc954f5d",
-    "rest": "17.41",
-    "city": "GSO",
+    "rest": "17.46",
+    "city": "JAX",
     "hotels": [
      {
-      "name": "MARRIOTT GREENSBORO DOWNTOWN",
-      "phone": "13363798000",
+      "name": "HYATT REGENCY RIVERFRONT",
+      "phone": "19045881234",
       "transportation": [
        {
-        "name": "LANDFLIGHT EXPRESS",
-        "phone": "3363701741"
+        "name": "654LIMO",
+        "phone": "8505742312"
        }
       ]
      }
@@ -72,53 +70,51 @@
    },
    "flights": [
     {
-     "uuid": "afb206dd-03c9-4f8c-9fff-8f2aa9ed64e8",
      "dutyperiod_idx": "1",
      "idx": "1",
      "depart_day": "1",
      "arrive_day": "1",
-     "equipment_code": "65",
-     "flight_number": "2154",
+     "equipment_code": "29",
+     "flight_number": "1792",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "BOS",
+     "departure_station": "ONT",
      "departure_time": {
-      "lcl": "1423",
-      "hbt": "1423"
+      "lcl": "1253",
+      "hbt": "1253"
      },
      "crew_meal": "",
-     "arrival_station": "DFW",
+     "arrival_station": "PHX",
      "arrival_time": {
-      "lcl": "1804",
-      "hbt": "1904"
+      "lcl": "1512",
+      "hbt": "1412"
      },
-     "block": "4.41",
+     "block": "1.19",
      "synth": "0.00",
-     "ground": "1.11",
-     "equipment_change": false
+     "ground": "1.33",
+     "equipment_change": true
     },
     {
-     "uuid": "f2286309-eb6e-41e1-b69c-fed28b5e0db0",
      "dutyperiod_idx": "1",
      "idx": "2",
      "depart_day": "1",
      "arrive_day": "1",
-     "equipment_code": "65",
-     "flight_number": "2738",
+     "equipment_code": "29",
+     "flight_number": "1479",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "DFW",
+     "departure_station": "PHX",
      "departure_time": {
-      "lcl": "1915",
-      "hbt": "2015"
+      "lcl": "1645",
+      "hbt": "1545"
      },
      "crew_meal": "",
-     "arrival_station": "GSO",
+     "arrival_station": "JAX",
      "arrival_time": {
-      "lcl": "2244",
-      "hbt": "2244"
+      "lcl": "2238",
+      "hbt": "1938"
      },
-     "block": "2.29",
+     "block": "3.53",
      "synth": "0.00",
      "ground": "0.00",
      "equipment_change": false
@@ -126,32 +122,40 @@
    ]
   },
   {
-   "uuid": "2aeed38f-6cb2-4abd-8924-c90874447fd2",
    "idx": "2",
    "report_time": {
-    "lcl": "1640",
-    "hbt": "1640"
+    "lcl": "1654",
+    "hbt": "1354"
    },
    "release_time": {
-    "lcl": "2318",
-    "hbt": "0018"
+    "lcl": "2356",
+    "hbt": "2056"
    },
-   "block": "4.22",
+   "block": "4.10",
    "synth": "0.00",
-   "total_pay": "4.22",
-   "duty": "7.38",
-   "flight_duty": "7.23",
+   "total_pay": "4.10",
+   "duty": "7.02",
+   "flight_duty": "6.32",
    "layover": {
-    "uuid": "a294ae90-9120-4982-bd5a-eac8f0eee723",
-    "rest": "15.24",
-    "city": "AUS",
+    "rest": "13.10",
+    "city": "IND",
     "hotels": [
      {
-      "name": "HOTEL INFO IN CCI/CREW PORTAL",
+      "name": "HYATT REGENCY INDIANAPOLIS",
+      "phone": "3176321234",
+      "transportation": [
+       {
+        "name": "CAPITOL CITY COACH",
+        "phone": "3174848484"
+       }
+      ]
+     },
+     {
+      "name": "DELTA HOTELS BY MARRIOTT                3172479700",
       "phone": "",
       "transportation": [
        {
-        "name": "TRANS INFO IN CCI/CREW PORTAL",
+        "name": "SHUTTLE",
         "phone": ""
        }
       ]
@@ -160,53 +164,51 @@
    },
    "flights": [
     {
-     "uuid": "e2a5796e-7860-4ac7-9420-5489f865c5e8",
      "dutyperiod_idx": "2",
      "idx": "1",
      "depart_day": "2",
      "arrive_day": "2",
-     "equipment_code": "65",
-     "flight_number": "1470",
+     "equipment_code": "67",
+     "flight_number": "1918",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "GSO",
+     "departure_station": "JAX",
      "departure_time": {
-      "lcl": "1740",
-      "hbt": "1740"
+      "lcl": "1754",
+      "hbt": "1454"
      },
      "crew_meal": "",
-     "arrival_station": "DFW",
+     "arrival_station": "PHL",
      "arrival_time": {
-      "lcl": "1954",
-      "hbt": "2054"
+      "lcl": "1958",
+      "hbt": "1658"
      },
-     "block": "3.14",
+     "block": "2.04",
      "synth": "0.00",
-     "ground": "2.01",
+     "ground": "1.22",
      "equipment_change": true
     },
     {
-     "uuid": "0b4bb2aa-defb-4f5f-b372-3eb2bd4229ce",
      "dutyperiod_idx": "2",
      "idx": "2",
      "depart_day": "2",
      "arrive_day": "2",
-     "equipment_code": "65",
-     "flight_number": "304",
+     "equipment_code": "92",
+     "flight_number": "2979",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "DFW",
+     "departure_station": "PHL",
      "departure_time": {
-      "lcl": "2155",
-      "hbt": "2255"
+      "lcl": "2120",
+      "hbt": "1820"
      },
      "crew_meal": "",
-     "arrival_station": "AUS",
+     "arrival_station": "IND",
      "arrival_time": {
-      "lcl": "2303",
-      "hbt": "0003"
+      "lcl": "2326",
+      "hbt": "2026"
      },
-     "block": "1.08",
+     "block": "2.06",
      "synth": "0.00",
      "ground": "0.00",
      "equipment_change": false
@@ -214,71 +216,68 @@
    ]
   },
   {
-   "uuid": "5d1f9f25-e35d-4324-9534-f8d7b622c84b",
    "idx": "3",
    "report_time": {
-    "lcl": "1442",
-    "hbt": "1542"
+    "lcl": "1306",
+    "hbt": "1006"
    },
    "release_time": {
-    "lcl": "2313",
-    "hbt": "2313"
+    "lcl": "2106",
+    "hbt": "2106"
    },
-   "block": "4.53",
+   "block": "6.50",
    "synth": "0.00",
-   "total_pay": "4.53",
-   "duty": "7.31",
-   "flight_duty": "7.16",
+   "total_pay": "6.50",
+   "duty": "11.00",
+   "flight_duty": "10.30",
    "layover": null,
    "flights": [
     {
-     "uuid": "662ed5a6-e14e-4c94-a2b2-311ac06301e2",
      "dutyperiod_idx": "3",
      "idx": "1",
      "depart_day": "3",
      "arrive_day": "3",
-     "equipment_code": "45",
-     "flight_number": "1320",
+     "equipment_code": "63",
+     "flight_number": "2085",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "AUS",
+     "departure_station": "IND",
      "departure_time": {
-      "lcl": "1542",
-      "hbt": "1642"
+      "lcl": "1406",
+      "hbt": "1106"
      },
      "crew_meal": "",
      "arrival_station": "CLT",
      "arrival_time": {
-      "lcl": "1921",
-      "hbt": "1921"
+      "lcl": "1545",
+      "hbt": "1245"
      },
-     "block": "2.39",
+     "block": "1.39",
      "synth": "0.00",
-     "ground": "1.23",
+     "ground": "2.40",
      "equipment_change": true
     },
     {
-     "uuid": "545ec4e1-f00a-45a8-8b52-800286fa3b1b",
      "dutyperiod_idx": "3",
      "idx": "2",
      "depart_day": "3",
      "arrive_day": "3",
-     "equipment_code": "45",
-     "flight_number": "1843",
+     "equipment_code": "63",
+     "flight_number": "2276",
      "deadhead": false,
      "deadhead_code": "",
      "departure_station": "CLT",
      "departure_time": {
-      "lcl": "2044",
-      "hbt": "2044"
+      "lcl": "1825",
+      "hbt": "1525"
      },
      "crew_meal": "",
-     "arrival_station": "BOS",
+     "arrival_station": "ONT",
      "arrival_time": {
-      "lcl": "2258",
-      "hbt": "2258"
+      "lcl": "2036",
+      "hbt": "2036"
      },
-     "block": "2.14",
+     "block": "5.11",
      "synth": "0.00",
      "ground": "0.00",
      "equipment_change": false
@@ -292,6 +291,10 @@
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",
+  "6",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "9",
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",
@@ -313,10 +316,6 @@
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",
-  "\u2212\u2212",
-  "\u2212\u2212",
-  "\u2212\u2212",
-  "\u2212\u2212",
-  "1"
+  "\u2212\u2212"
  ]
 }

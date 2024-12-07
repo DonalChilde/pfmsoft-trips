@@ -1,0 +1,261 @@
+{
+ "source": "55140173-4cfe-522d-add9-43d5d9d1fdd0",
+ "number": "8588",
+ "ops_count": "1",
+ "special_qual": false,
+ "block": "19.01",
+ "synth": "1.59",
+ "total_pay": "21.00",
+ "tafb": "71.35",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "LAX",
+  "satellite_base": "",
+  "equipment": "320",
+  "division": "INTL",
+  "page": "2035"
+ },
+ "uuid": "592a6d0d-7959-5ecc-8d20-261497dd48ae",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [],
+ "dutyperiods": [
+  {
+   "idx": "1",
+   "report_time": {
+    "lcl": "2106",
+    "hbt": "2106"
+   },
+   "release_time": {
+    "lcl": "0701",
+    "hbt": "0401"
+   },
+   "block": "5.25",
+   "synth": "0.00",
+   "total_pay": "5.25",
+   "duty": "6.55",
+   "flight_duty": "6.25",
+   "layover": {
+    "rest": "12.29",
+    "city": "JFK",
+    "hotels": [
+     {
+      "name": "TWA HOTEL",
+      "phone": "2128069000",
+      "transportation": [
+       {
+        "name": "SHUTTLE",
+        "phone": ""
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "2",
+     "equipment_code": "80",
+     "flight_number": "10",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "LAX",
+     "departure_time": {
+      "lcl": "2206",
+      "hbt": "2206"
+     },
+     "crew_meal": "",
+     "arrival_station": "JFK",
+     "arrival_time": {
+      "lcl": "0631",
+      "hbt": "0331"
+     },
+     "block": "5.25",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "2",
+   "report_time": {
+    "lcl": "1930",
+    "hbt": "1630"
+   },
+   "release_time": {
+    "lcl": "0040",
+    "hbt": "0040"
+   },
+   "block": "6.40",
+   "synth": "0.00",
+   "total_pay": "6.40",
+   "duty": "8.10",
+   "flight_duty": "7.40",
+   "layover": {
+    "rest": "34.20",
+    "city": "SFO",
+    "hotels": [
+     {
+      "name": "HYATT REGENCY SAN FRANCISCO",
+      "phone": "4157881234",
+      "transportation": [
+       {
+        "name": "SKYHOP GLOBAL",
+        "phone": "9544000412"
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "2",
+     "idx": "1",
+     "depart_day": "2",
+     "arrive_day": "3",
+     "equipment_code": "80",
+     "flight_number": "177",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "JFK",
+     "departure_time": {
+      "lcl": "2030",
+      "hbt": "1730"
+     },
+     "crew_meal": "",
+     "arrival_station": "SFO",
+     "arrival_time": {
+      "lcl": "0010",
+      "hbt": "0010"
+     },
+     "block": "6.40",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "3",
+   "report_time": {
+    "lcl": "1100",
+    "hbt": "1100"
+   },
+   "release_time": {
+    "lcl": "2041",
+    "hbt": "2041"
+   },
+   "block": "6.56",
+   "synth": "0.00",
+   "total_pay": "6.56",
+   "duty": "9.41",
+   "flight_duty": "9.11",
+   "layover": null,
+   "flights": [
+    {
+     "dutyperiod_idx": "3",
+     "idx": "1",
+     "depart_day": "4",
+     "arrive_day": "4",
+     "equipment_code": "64",
+     "flight_number": "2798",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "SFO",
+     "departure_time": {
+      "lcl": "1200",
+      "hbt": "1200"
+     },
+     "crew_meal": "",
+     "arrival_station": "DFW",
+     "arrival_time": {
+      "lcl": "1730",
+      "hbt": "1530"
+     },
+     "block": "3.30",
+     "synth": "0.00",
+     "ground": "1.15",
+     "equipment_change": false
+    },
+    {
+     "dutyperiod_idx": "3",
+     "idx": "2",
+     "depart_day": "4",
+     "arrive_day": "4",
+     "equipment_code": "64",
+     "flight_number": "1657",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "DFW",
+     "departure_time": {
+      "lcl": "1845",
+      "hbt": "1645"
+     },
+     "crew_meal": "",
+     "arrival_station": "LAX",
+     "arrival_time": {
+      "lcl": "2011",
+      "hbt": "2011"
+     },
+     "block": "3.26",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "26",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212"
+ ]
+}

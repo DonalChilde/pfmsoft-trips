@@ -1,0 +1,345 @@
+{
+ "source": "9726d2fb-4892-5e06-b43b-360c3f347874",
+ "number": "26481",
+ "ops_count": "1",
+ "special_qual": false,
+ "block": "18.23",
+ "synth": "2.38",
+ "total_pay": "21.01",
+ "tafb": "73.34",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "LAX",
+  "satellite_base": "",
+  "equipment": "737",
+  "division": "DOM",
+  "page": "210"
+ },
+ "uuid": "898f7e55-29ce-5f47-9392-3a205a64f7a4",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [],
+ "dutyperiods": [
+  {
+   "idx": "1",
+   "report_time": {
+    "lcl": "2249",
+    "hbt": "2249"
+   },
+   "release_time": {
+    "lcl": "0515",
+    "hbt": "0315"
+   },
+   "block": "4.11",
+   "synth": "0.00",
+   "total_pay": "4.11",
+   "duty": "5.26",
+   "flight_duty": "5.11",
+   "layover": {
+    "rest": "12.25",
+    "city": "ORD",
+    "hotels": [
+     {
+      "name": "HILTON O\u2019HARE AIRPORT",
+      "phone": "17736868000",
+      "transportation": [
+       {
+        "name": "SHUTTLE",
+        "phone": ""
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "2",
+     "equipment_code": "65",
+     "flight_number": "1140",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "LAX",
+     "departure_time": {
+      "lcl": "2349",
+      "hbt": "2349"
+     },
+     "crew_meal": "",
+     "arrival_station": "ORD",
+     "arrival_time": {
+      "lcl": "0500",
+      "hbt": "0300"
+     },
+     "block": "4.11",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "2",
+   "report_time": {
+    "lcl": "1740",
+    "hbt": "1540"
+   },
+   "release_time": {
+    "lcl": "2249",
+    "hbt": "1949"
+   },
+   "block": "2.54",
+   "synth": "0.00",
+   "total_pay": "2.54",
+   "duty": "4.09",
+   "flight_duty": "3.54",
+   "layover": {
+    "rest": "15.52",
+    "city": "TPA",
+    "hotels": [
+     {
+      "name": "WESTSHORE GRAND HOTEL",
+      "phone": "18132864400",
+      "transportation": [
+       {
+        "name": "SKYHOP GLOBAL",
+        "phone": "9544000412"
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "2",
+     "idx": "1",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "65",
+     "flight_number": "1440",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "ORD",
+     "departure_time": {
+      "lcl": "1840",
+      "hbt": "1640"
+     },
+     "crew_meal": "",
+     "arrival_station": "TPA",
+     "arrival_time": {
+      "lcl": "2234",
+      "hbt": "1934"
+     },
+     "block": "2.54",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "3",
+   "report_time": {
+    "lcl": "1441",
+    "hbt": "1141"
+   },
+   "release_time": {
+    "lcl": "2305",
+    "hbt": "2005"
+   },
+   "block": "5.16",
+   "synth": "0.00",
+   "total_pay": "5.16",
+   "duty": "8.24",
+   "flight_duty": "8.09",
+   "layover": {
+    "rest": "17.04",
+    "city": "JAX",
+    "hotels": [
+     {
+      "name": "HYATT REGENCY RIVERFRONT",
+      "phone": "19045881234",
+      "transportation": [
+       {
+        "name": "654LIMO",
+        "phone": "8505742312"
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "3",
+     "idx": "1",
+     "depart_day": "3",
+     "arrive_day": "3",
+     "equipment_code": "65",
+     "flight_number": "1069",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "TPA",
+     "departure_time": {
+      "lcl": "1541",
+      "hbt": "1241"
+     },
+     "crew_meal": "",
+     "arrival_station": "DFW",
+     "arrival_time": {
+      "lcl": "1737",
+      "hbt": "1537"
+     },
+     "block": "2.56",
+     "synth": "0.00",
+     "ground": "1.53",
+     "equipment_change": true
+    },
+    {
+     "dutyperiod_idx": "3",
+     "idx": "2",
+     "depart_day": "3",
+     "arrive_day": "3",
+     "equipment_code": "45",
+     "flight_number": "1305",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "DFW",
+     "departure_time": {
+      "lcl": "1930",
+      "hbt": "1730"
+     },
+     "crew_meal": "",
+     "arrival_station": "JAX",
+     "arrival_time": {
+      "lcl": "2250",
+      "hbt": "1950"
+     },
+     "block": "2.20",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "4",
+   "report_time": {
+    "lcl": "1609",
+    "hbt": "1309"
+   },
+   "release_time": {
+    "lcl": "2323",
+    "hbt": "2323"
+   },
+   "block": "6.02",
+   "synth": "1.21",
+   "total_pay": "7.23",
+   "duty": "10.14",
+   "flight_duty": "9.59",
+   "layover": null,
+   "flights": [
+    {
+     "dutyperiod_idx": "4",
+     "idx": "1",
+     "depart_day": "4",
+     "arrive_day": "4",
+     "equipment_code": "67",
+     "flight_number": "2055",
+     "deadhead": true,
+     "deadhead_code": "AA",
+     "departure_station": "JAX",
+     "departure_time": {
+      "lcl": "1639",
+      "hbt": "1339"
+     },
+     "crew_meal": "",
+     "arrival_station": "MIA",
+     "arrival_time": {
+      "lcl": "1800",
+      "hbt": "1500"
+     },
+     "block": "0.00",
+     "synth": "1.21",
+     "ground": "2.06",
+     "equipment_change": true
+    },
+    {
+     "dutyperiod_idx": "4",
+     "idx": "2",
+     "depart_day": "4",
+     "arrive_day": "4",
+     "equipment_code": "25",
+     "flight_number": "3073",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "MIA",
+     "departure_time": {
+      "lcl": "2006",
+      "hbt": "1706"
+     },
+     "crew_meal": "",
+     "arrival_station": "LAX",
+     "arrival_time": {
+      "lcl": "2308",
+      "hbt": "2308"
+     },
+     "block": "6.02",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "\u2212\u2212",
+  "2",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212"
+ ]
+}

@@ -1,0 +1,311 @@
+{
+ "source": "aa3e645f-3f17-55de-b5be-26a02922eadc",
+ "number": "26477",
+ "ops_count": "1",
+ "special_qual": false,
+ "block": "16.57",
+ "synth": "1.18",
+ "total_pay": "18.15",
+ "tafb": "63.55",
+ "external": {
+  "effective_from": "2024-11-01",
+  "effective_to": "2024-12-01"
+ },
+ "page_header": {
+  "from_date": {
+   "month": "11",
+   "day": "01"
+  },
+  "to_date": {
+   "month": "12",
+   "day": "01"
+  }
+ },
+ "page_footer": {
+  "issued": "09OCT2024",
+  "effective": "01NOV2024",
+  "base": "LAX",
+  "satellite_base": "",
+  "equipment": "737",
+  "division": "DOM",
+  "page": "210"
+ },
+ "uuid": "b643bbe8-74db-5bfe-b7f1-7c4669427754",
+ "positions": [
+  "CA",
+  "FO"
+ ],
+ "operations": [],
+ "dutyperiods": [
+  {
+   "idx": "1",
+   "report_time": {
+    "lcl": "0711",
+    "hbt": "0711"
+   },
+   "release_time": {
+    "lcl": "2036",
+    "hbt": "1836"
+   },
+   "block": "7.26",
+   "synth": "0.00",
+   "total_pay": "7.26",
+   "duty": "11.25",
+   "flight_duty": "11.10",
+   "layover": {
+    "rest": "19.43",
+    "city": "BNA",
+    "hotels": [
+     {
+      "name": "RESIDENCE INN & SPRINGHILL SUITES BY MA",
+      "phone": "16159889920",
+      "transportation": [
+       {
+        "name": "SIGNATURE TRANSPORTATION SERVICES",
+        "phone": "6152445466"
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "1",
+     "idx": "1",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "25",
+     "flight_number": "1815",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "LAX",
+     "departure_time": {
+      "lcl": "0811",
+      "hbt": "0811"
+     },
+     "crew_meal": "",
+     "arrival_station": "MIA",
+     "arrival_time": {
+      "lcl": "1612",
+      "hbt": "1312"
+     },
+     "block": "5.01",
+     "synth": "0.00",
+     "ground": "2.44",
+     "equipment_change": true
+    },
+    {
+     "dutyperiod_idx": "1",
+     "idx": "2",
+     "depart_day": "1",
+     "arrive_day": "1",
+     "equipment_code": "45",
+     "flight_number": "695",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "MIA",
+     "departure_time": {
+      "lcl": "1856",
+      "hbt": "1556"
+     },
+     "crew_meal": "",
+     "arrival_station": "BNA",
+     "arrival_time": {
+      "lcl": "2021",
+      "hbt": "1821"
+     },
+     "block": "2.25",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "2",
+   "report_time": {
+    "lcl": "1519",
+    "hbt": "1319"
+   },
+   "release_time": {
+    "lcl": "2215",
+    "hbt": "2215"
+   },
+   "block": "6.01",
+   "synth": "0.00",
+   "total_pay": "6.01",
+   "duty": "8.56",
+   "flight_duty": "8.41",
+   "layover": {
+    "rest": "16.38",
+    "city": "SFO",
+    "hotels": [
+     {
+      "name": "THE WESTIN ST. FRANCIS SFO ON UNION SQU",
+      "phone": "4153977000",
+      "transportation": [
+       {
+        "name": "TRANS INFO IN CCI/CREW PORTAL",
+        "phone": ""
+       }
+      ]
+     }
+    ]
+   },
+   "flights": [
+    {
+     "dutyperiod_idx": "2",
+     "idx": "1",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "65",
+     "flight_number": "1409",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "BNA",
+     "departure_time": {
+      "lcl": "1619",
+      "hbt": "1419"
+     },
+     "crew_meal": "",
+     "arrival_station": "LAX",
+     "arrival_time": {
+      "lcl": "1900",
+      "hbt": "1900"
+     },
+     "block": "4.41",
+     "synth": "0.00",
+     "ground": "1.40",
+     "equipment_change": true
+    },
+    {
+     "dutyperiod_idx": "2",
+     "idx": "2",
+     "depart_day": "2",
+     "arrive_day": "2",
+     "equipment_code": "65",
+     "flight_number": "205",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "LAX",
+     "departure_time": {
+      "lcl": "2040",
+      "hbt": "2040"
+     },
+     "crew_meal": "",
+     "arrival_station": "SFO",
+     "arrival_time": {
+      "lcl": "2200",
+      "hbt": "2200"
+     },
+     "block": "1.20",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  },
+  {
+   "idx": "3",
+   "report_time": {
+    "lcl": "1453",
+    "hbt": "1453"
+   },
+   "release_time": {
+    "lcl": "2206",
+    "hbt": "2206"
+   },
+   "block": "3.30",
+   "synth": "0.00",
+   "total_pay": "3.30",
+   "duty": "7.13",
+   "flight_duty": "6.58",
+   "layover": null,
+   "flights": [
+    {
+     "dutyperiod_idx": "3",
+     "idx": "1",
+     "depart_day": "3",
+     "arrive_day": "3",
+     "equipment_code": "65",
+     "flight_number": "1930",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "SFO",
+     "departure_time": {
+      "lcl": "1553",
+      "hbt": "1553"
+     },
+     "crew_meal": "",
+     "arrival_station": "PHX",
+     "arrival_time": {
+      "lcl": "1855",
+      "hbt": "1755"
+     },
+     "block": "2.02",
+     "synth": "0.00",
+     "ground": "2.28",
+     "equipment_change": true
+    },
+    {
+     "dutyperiod_idx": "3",
+     "idx": "2",
+     "depart_day": "3",
+     "arrive_day": "3",
+     "equipment_code": "65",
+     "flight_number": "2001",
+     "deadhead": false,
+     "deadhead_code": "",
+     "departure_station": "PHX",
+     "departure_time": {
+      "lcl": "2123",
+      "hbt": "2023"
+     },
+     "crew_meal": "",
+     "arrival_station": "LAX",
+     "arrival_time": {
+      "lcl": "2151",
+      "hbt": "2151"
+     },
+     "block": "1.28",
+     "synth": "0.00",
+     "ground": "0.00",
+     "equipment_change": false
+    }
+   ]
+  }
+ ],
+ "calendar": [
+  "\u2212\u2212",
+  "2",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212",
+  "\u2212\u2212"
+ ]
+}

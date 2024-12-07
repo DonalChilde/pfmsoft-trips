@@ -1,12 +1,12 @@
 {
- "source": "7cc92a41-6909-4e7e-bd28-ee1b4ff18609",
- "number": "10891",
+ "source": "4c902645-fee1-5ade-b7de-7a17ba0ad223",
+ "number": "762",
  "ops_count": "2",
  "special_qual": false,
- "block": "12.32",
- "synth": "3.13",
- "total_pay": "15.45",
- "tafb": "44.11",
+ "block": "29.20",
+ "synth": "0.00",
+ "total_pay": "29.20",
+ "tafb": "57.05",
  "external": {
   "effective_from": "2024-11-01",
   "effective_to": "2024-12-01"
@@ -24,13 +24,13 @@
  "page_footer": {
   "issued": "09OCT2024",
   "effective": "01NOV2024",
-  "base": "PHX",
+  "base": "LAX",
   "satellite_base": "",
-  "equipment": "320",
+  "equipment": "777",
   "division": "INTL",
-  "page": "3320"
+  "page": "1912"
  },
- "uuid": "ed73d65e-824d-4801-bf66-c77dab9304d9",
+ "uuid": "23bdf380-eaf4-5500-9238-ba5069bb6999",
  "positions": [
   "CA",
   "FO"
@@ -38,33 +38,31 @@
  "operations": [],
  "dutyperiods": [
   {
-   "uuid": "f4e1fb33-121e-4082-b536-58f337345e78",
    "idx": "1",
    "report_time": {
-    "lcl": "1054",
-    "hbt": "1054"
+    "lcl": "2230",
+    "hbt": "2230"
    },
    "release_time": {
-    "lcl": "1606",
-    "hbt": "1906"
+    "lcl": "0930",
+    "hbt": "1430"
    },
-   "block": "6.42",
+   "block": "15.30",
    "synth": "0.00",
-   "total_pay": "6.42",
-   "duty": "8.12",
-   "flight_duty": "7.42",
+   "total_pay": "15.30",
+   "duty": "17.00",
+   "flight_duty": "16.30",
    "layover": {
-    "uuid": "1da0663c-9cb3-4800-b8a7-54a7b8c781a5",
-    "rest": "28.39",
-    "city": "KOA",
+    "rest": "24.45",
+    "city": "SYD",
     "hotels": [
      {
-      "name": "COURTYARD KING KAMEHAMEHA",
-      "phone": "18083292911",
+      "name": "SYDNEY HARBOUR MARRIOTT",
+      "phone": "61292597000",
       "transportation": [
        {
-        "name": "VIP TRANSPORTATION\u2212 KOA",
-        "phone": "8088712702"
+        "name": "SYDNEY GROUND TRANSPORT",
+        "phone": "61296671563"
        }
       ]
      }
@@ -72,27 +70,26 @@
    },
    "flights": [
     {
-     "uuid": "42a4a805-8e26-48ca-898e-102599dfef41",
      "dutyperiod_idx": "1",
      "idx": "1",
      "depart_day": "1",
-     "arrive_day": "1",
-     "equipment_code": "26",
-     "flight_number": "663",
+     "arrive_day": "3",
+     "equipment_code": "82",
+     "flight_number": "73",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "PHX",
+     "departure_station": "LAX",
      "departure_time": {
-      "lcl": "1154",
-      "hbt": "1154"
+      "lcl": "2330",
+      "hbt": "2330"
      },
      "crew_meal": "",
-     "arrival_station": "KOA",
+     "arrival_station": "SYD",
      "arrival_time": {
-      "lcl": "1536",
-      "hbt": "1836"
+      "lcl": "0900",
+      "hbt": "1400"
      },
-     "block": "6.42",
+     "block": "15.30",
      "synth": "0.00",
      "ground": "0.00",
      "equipment_change": false
@@ -100,45 +97,43 @@
    ]
   },
   {
-   "uuid": "85fce21f-78e5-4b78-bd3b-e741ea4a6eca",
    "idx": "2",
    "report_time": {
-    "lcl": "2045",
-    "hbt": "2345"
+    "lcl": "1015",
+    "hbt": "1515"
    },
    "release_time": {
-    "lcl": "0705",
-    "hbt": "0705"
+    "lcl": "0635",
+    "hbt": "0635"
    },
-   "block": "5.50",
+   "block": "13.50",
    "synth": "0.00",
-   "total_pay": "5.50",
-   "duty": "7.20",
-   "flight_duty": "6.50",
+   "total_pay": "13.50",
+   "duty": "15.20",
+   "flight_duty": "14.50",
    "layover": null,
    "flights": [
     {
-     "uuid": "20aa03f9-a094-4acb-b342-3f016693a173",
      "dutyperiod_idx": "2",
      "idx": "1",
-     "depart_day": "2",
-     "arrive_day": "3",
-     "equipment_code": "26",
-     "flight_number": "602",
+     "depart_day": "4",
+     "arrive_day": "4",
+     "equipment_code": "82",
+     "flight_number": "72",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "KOA",
+     "departure_station": "SYD",
      "departure_time": {
-      "lcl": "2145",
-      "hbt": "0045"
+      "lcl": "1115",
+      "hbt": "1615"
      },
      "crew_meal": "",
-     "arrival_station": "PHX",
+     "arrival_station": "LAX",
      "arrival_time": {
-      "lcl": "0635",
-      "hbt": "0635"
+      "lcl": "0605",
+      "hbt": "0605"
      },
-     "block": "5.50",
+     "block": "13.50",
      "synth": "0.00",
      "ground": "0.00",
      "equipment_change": false
@@ -147,6 +142,8 @@
   }
  ],
  "calendar": [
+  "1",
+  "2",
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",
@@ -163,8 +160,6 @@
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",
-  "17",
-  "18",
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",

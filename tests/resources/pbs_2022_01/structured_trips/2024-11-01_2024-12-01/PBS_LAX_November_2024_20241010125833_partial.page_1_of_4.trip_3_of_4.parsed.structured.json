@@ -1,12 +1,12 @@
 {
- "source": "27edb1b5-47ed-4d92-993c-e29b45fa6a27",
- "number": "25556",
+ "source": "73bb1605-ba90-5077-9e18-b4e7c5ebbf50",
+ "number": "26480",
  "ops_count": "1",
  "special_qual": false,
- "block": "10.47",
- "synth": "0.00",
- "total_pay": "10.47",
- "tafb": "30.04",
+ "block": "10.28",
+ "synth": "0.02",
+ "total_pay": "10.30",
+ "tafb": "35.47",
  "external": {
   "effective_from": "2024-11-01",
   "effective_to": "2024-12-01"
@@ -24,13 +24,13 @@
  "page_footer": {
   "issued": "09OCT2024",
   "effective": "01NOV2024",
-  "base": "BOS",
+  "base": "LAX",
   "satellite_base": "",
   "equipment": "737",
   "division": "DOM",
-  "page": "103"
+  "page": "210"
  },
- "uuid": "b3fd7248-4bf8-41ce-a3d2-7dd9412b3b84",
+ "uuid": "34e66a90-9f21-5e0f-a8a9-058d950036ad",
  "positions": [
   "CA",
   "FO"
@@ -38,33 +38,31 @@
  "operations": [],
  "dutyperiods": [
   {
-   "uuid": "3329fddf-0443-4ac1-beff-13e0d0ecc47c",
    "idx": "1",
    "report_time": {
-    "lcl": "1635",
-    "hbt": "1635"
+    "lcl": "1035",
+    "hbt": "1035"
    },
    "release_time": {
-    "lcl": "2238",
-    "hbt": "0038"
+    "lcl": "2237",
+    "hbt": "2037"
    },
-   "block": "5.45",
+   "block": "7.07",
    "synth": "0.00",
-   "total_pay": "5.45",
-   "duty": "8.03",
-   "flight_duty": "7.48",
+   "total_pay": "7.07",
+   "duty": "10.02",
+   "flight_duty": "9.47",
    "layover": {
-    "uuid": "ec2d414b-b7bf-4be3-80e4-682ed8be0aa5",
-    "rest": "12.57",
-    "city": "DEN",
+    "rest": "21.09",
+    "city": "AUS",
     "hotels": [
      {
-      "name": "HYATT PLACE PENA STATION",
-      "phone": "7204054321",
+      "name": "AUSTIN MARRIOTT DOWNTOWN",
+      "phone": "5124571111",
       "transportation": [
        {
-        "name": "SHUTTLE",
-        "phone": ""
+        "name": "J & G\u2019S CITYWIDE EXPRESS",
+        "phone": "5127868131"
        }
       ]
      }
@@ -72,53 +70,51 @@
    },
    "flights": [
     {
-     "uuid": "884cea67-a9b0-48cf-99ed-3196e536c8c9",
      "dutyperiod_idx": "1",
      "idx": "1",
      "depart_day": "1",
      "arrive_day": "1",
-     "equipment_code": "45",
-     "flight_number": "2877",
+     "equipment_code": "65",
+     "flight_number": "1594",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "BOS",
+     "departure_station": "LAX",
      "departure_time": {
-      "lcl": "1735",
-      "hbt": "1735"
+      "lcl": "1135",
+      "hbt": "1135"
      },
      "crew_meal": "",
      "arrival_station": "ORD",
      "arrival_time": {
-      "lcl": "1937",
-      "hbt": "2037"
+      "lcl": "1749",
+      "hbt": "1549"
      },
-     "block": "3.02",
+     "block": "4.14",
      "synth": "0.00",
-     "ground": "1.03",
-     "equipment_change": false
+     "ground": "1.40",
+     "equipment_change": true
     },
     {
-     "uuid": "ce62d0cb-54d1-4850-bd6b-1735eb3cf80c",
      "dutyperiod_idx": "1",
      "idx": "2",
      "depart_day": "1",
      "arrive_day": "1",
-     "equipment_code": "45",
-     "flight_number": "1387",
+     "equipment_code": "65",
+     "flight_number": "1715",
      "deadhead": false,
      "deadhead_code": "",
      "departure_station": "ORD",
      "departure_time": {
-      "lcl": "2040",
-      "hbt": "2140"
+      "lcl": "1929",
+      "hbt": "1729"
      },
      "crew_meal": "",
-     "arrival_station": "DEN",
+     "arrival_station": "AUS",
      "arrival_time": {
-      "lcl": "2223",
-      "hbt": "0023"
+      "lcl": "2222",
+      "hbt": "2022"
      },
-     "block": "2.43",
+     "block": "2.53",
      "synth": "0.00",
      "ground": "0.00",
      "equipment_change": false
@@ -126,71 +122,43 @@
    ]
   },
   {
-   "uuid": "a385e91c-e5b2-4ac1-8e5c-97491c2a56f9",
    "idx": "2",
    "report_time": {
-    "lcl": "1135",
-    "hbt": "1335"
+    "lcl": "1846",
+    "hbt": "1646"
    },
    "release_time": {
-    "lcl": "2239",
-    "hbt": "2239"
+    "lcl": "2122",
+    "hbt": "2122"
    },
-   "block": "5.02",
+   "block": "3.21",
    "synth": "0.00",
-   "total_pay": "5.02",
-   "duty": "9.04",
-   "flight_duty": "8.49",
+   "total_pay": "3.21",
+   "duty": "4.36",
+   "flight_duty": "4.21",
    "layover": null,
    "flights": [
     {
-     "uuid": "d0a28ffa-240d-42ad-b99c-4db82d48e9b7",
      "dutyperiod_idx": "2",
      "idx": "1",
      "depart_day": "2",
      "arrive_day": "2",
      "equipment_code": "65",
-     "flight_number": "2404",
+     "flight_number": "799",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "DEN",
+     "departure_station": "AUS",
      "departure_time": {
-      "lcl": "1235",
-      "hbt": "1435"
+      "lcl": "1946",
+      "hbt": "1746"
      },
      "crew_meal": "",
-     "arrival_station": "ORD",
+     "arrival_station": "LAX",
      "arrival_time": {
-      "lcl": "1608",
-      "hbt": "1708"
+      "lcl": "2107",
+      "hbt": "2107"
      },
-     "block": "2.33",
-     "synth": "0.00",
-     "ground": "2.47",
-     "equipment_change": true
-    },
-    {
-     "uuid": "9ea59cff-e76d-40c3-9c7d-e262e5a857b8",
-     "dutyperiod_idx": "2",
-     "idx": "2",
-     "depart_day": "2",
-     "arrive_day": "2",
-     "equipment_code": "45",
-     "flight_number": "407",
-     "deadhead": false,
-     "deadhead_code": "",
-     "departure_station": "ORD",
-     "departure_time": {
-      "lcl": "1855",
-      "hbt": "1955"
-     },
-     "crew_meal": "",
-     "arrival_station": "BOS",
-     "arrival_time": {
-      "lcl": "2224",
-      "hbt": "2224"
-     },
-     "block": "2.29",
+     "block": "3.21",
      "synth": "0.00",
      "ground": "0.00",
      "equipment_change": false
@@ -200,6 +168,7 @@
  ],
  "calendar": [
   "\u2212\u2212",
+  "2",
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",
@@ -228,7 +197,6 @@
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",
-  "\u2212\u2212",
-  "1"
+  "\u2212\u2212"
  ]
 }

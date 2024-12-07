@@ -1,12 +1,12 @@
 {
- "source": "a66282d9-237a-4bfa-9e89-506427772f85",
- "number": "25554",
+ "source": "dc7bc881-4c37-537b-a7bf-fe7ee7971ad4",
+ "number": "26475",
  "ops_count": "1",
  "special_qual": false,
- "block": "10.44",
+ "block": "13.09",
  "synth": "0.00",
- "total_pay": "10.44",
- "tafb": "32.08",
+ "total_pay": "13.09",
+ "tafb": "36.00",
  "external": {
   "effective_from": "2024-11-01",
   "effective_to": "2024-12-01"
@@ -24,13 +24,13 @@
  "page_footer": {
   "issued": "09OCT2024",
   "effective": "01NOV2024",
-  "base": "BOS",
+  "base": "LAX",
   "satellite_base": "",
   "equipment": "737",
   "division": "DOM",
-  "page": "103"
+  "page": "210"
  },
- "uuid": "46f8d47f-fba7-44ca-bd67-36b1089d4e49",
+ "uuid": "64709f69-1b62-5577-a36e-db1e9fdd8541",
  "positions": [
   "CA",
   "FO"
@@ -38,33 +38,31 @@
  "operations": [],
  "dutyperiods": [
   {
-   "uuid": "c1e450ce-3952-4f05-9f6a-304c470d9c26",
    "idx": "1",
    "report_time": {
-    "lcl": "1505",
-    "hbt": "1505"
+    "lcl": "0640",
+    "hbt": "0640"
    },
    "release_time": {
-    "lcl": "2231",
-    "hbt": "2331"
+    "lcl": "2015",
+    "hbt": "1715"
    },
-   "block": "5.55",
+   "block": "6.15",
    "synth": "0.00",
-   "total_pay": "5.55",
-   "duty": "8.26",
-   "flight_duty": "8.11",
+   "total_pay": "6.15",
+   "duty": "10.35",
+   "flight_duty": "10.20",
    "layover": {
-    "uuid": "01eab609-31f5-490e-8254-30f1d972206f",
-    "rest": "14.39",
-    "city": "OKC",
+    "rest": "15.53",
+    "city": "PHL",
     "hotels": [
      {
-      "name": "SHERATON OKLAHOMA CITY DOWNTOWN",
-      "phone": "14052352780",
+      "name": "MARRIOTT OLD CITY",
+      "phone": "12152386000",
       "transportation": [
        {
-        "name": "AIRPORT EXPRESS",
-        "phone": "4056813311"
+        "name": "SKYHOP GLOBAL",
+        "phone": "9544000412"
        }
       ]
      }
@@ -72,53 +70,51 @@
    },
    "flights": [
     {
-     "uuid": "ecbbb7e5-e8ba-44ec-a852-b4e5ceafbad9",
      "dutyperiod_idx": "1",
      "idx": "1",
      "depart_day": "1",
      "arrive_day": "1",
-     "equipment_code": "45",
-     "flight_number": "1439",
+     "equipment_code": "65",
+     "flight_number": "475",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "BOS",
+     "departure_station": "LAX",
      "departure_time": {
-      "lcl": "1605",
-      "hbt": "1605"
+      "lcl": "0740",
+      "hbt": "0740"
      },
      "crew_meal": "",
-     "arrival_station": "DFW",
+     "arrival_station": "ORD",
      "arrival_time": {
-      "lcl": "1948",
-      "hbt": "2048"
+      "lcl": "1354",
+      "hbt": "1154"
      },
-     "block": "4.43",
+     "block": "4.14",
      "synth": "0.00",
-     "ground": "1.16",
-     "equipment_change": false
+     "ground": "3.05",
+     "equipment_change": true
     },
     {
-     "uuid": "ba380a55-064d-4d59-841e-cedd595e464a",
      "dutyperiod_idx": "1",
      "idx": "2",
      "depart_day": "1",
      "arrive_day": "1",
      "equipment_code": "45",
-     "flight_number": "1458",
+     "flight_number": "588",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "DFW",
+     "departure_station": "ORD",
      "departure_time": {
-      "lcl": "2104",
-      "hbt": "2204"
+      "lcl": "1659",
+      "hbt": "1459"
      },
      "crew_meal": "",
-     "arrival_station": "OKC",
+     "arrival_station": "PHL",
      "arrival_time": {
-      "lcl": "2216",
-      "hbt": "2316"
+      "lcl": "2000",
+      "hbt": "1700"
      },
-     "block": "1.12",
+     "block": "2.01",
      "synth": "0.00",
      "ground": "0.00",
      "equipment_change": false
@@ -126,71 +122,68 @@
    ]
   },
   {
-   "uuid": "d5598bf4-b6a2-4e02-a80a-3fe4c86d00ae",
    "idx": "2",
    "report_time": {
-    "lcl": "1310",
-    "hbt": "1410"
+    "lcl": "1108",
+    "hbt": "0808"
    },
    "release_time": {
-    "lcl": "2313",
-    "hbt": "2313"
+    "lcl": "1740",
+    "hbt": "1740"
    },
-   "block": "4.49",
+   "block": "6.54",
    "synth": "0.00",
-   "total_pay": "4.49",
-   "duty": "9.03",
-   "flight_duty": "8.48",
+   "total_pay": "6.54",
+   "duty": "9.32",
+   "flight_duty": "9.17",
    "layover": null,
    "flights": [
     {
-     "uuid": "adf63d19-5d23-4fb5-b5e0-47b0d9b0fd12",
      "dutyperiod_idx": "2",
      "idx": "1",
      "depart_day": "2",
      "arrive_day": "2",
      "equipment_code": "45",
-     "flight_number": "1626",
+     "flight_number": "629",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "OKC",
+     "departure_station": "PHL",
      "departure_time": {
-      "lcl": "1410",
-      "hbt": "1510"
+      "lcl": "1208",
+      "hbt": "0908"
      },
      "crew_meal": "",
-     "arrival_station": "CLT",
+     "arrival_station": "ORD",
      "arrival_time": {
-      "lcl": "1745",
-      "hbt": "1745"
+      "lcl": "1332",
+      "hbt": "1132"
      },
-     "block": "2.35",
+     "block": "2.24",
      "synth": "0.00",
-     "ground": "2.59",
+     "ground": "1.23",
      "equipment_change": true
     },
     {
-     "uuid": "9e7f44de-1576-499f-b1d0-e12b03d466d3",
      "dutyperiod_idx": "2",
      "idx": "2",
      "depart_day": "2",
      "arrive_day": "2",
-     "equipment_code": "45",
-     "flight_number": "1843",
+     "equipment_code": "65",
+     "flight_number": "1551",
      "deadhead": false,
      "deadhead_code": "",
-     "departure_station": "CLT",
+     "departure_station": "ORD",
      "departure_time": {
-      "lcl": "2044",
-      "hbt": "2044"
+      "lcl": "1455",
+      "hbt": "1255"
      },
      "crew_meal": "",
-     "arrival_station": "BOS",
+     "arrival_station": "LAX",
      "arrival_time": {
-      "lcl": "2258",
-      "hbt": "2258"
+      "lcl": "1725",
+      "hbt": "1725"
      },
-     "block": "2.14",
+     "block": "4.30",
      "synth": "0.00",
      "ground": "0.00",
      "equipment_change": false
@@ -200,6 +193,7 @@
  ],
  "calendar": [
   "\u2212\u2212",
+  "2",
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",
@@ -228,7 +222,6 @@
   "\u2212\u2212",
   "\u2212\u2212",
   "\u2212\u2212",
-  "\u2212\u2212",
-  "1"
+  "\u2212\u2212"
  ]
 }
