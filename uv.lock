@@ -503,7 +503,7 @@ wheels = [
 [[package]]
 name = "pbs-parse"
 version = "0.0.0"
-source = { git = "https://github.com/donalchilde/pbs-parse?rev=dev#a2d326cfddd2804d41bf1516f3d6a0b85b878d63" }
+source = { git = "https://github.com/donalchilde/pbs-parse?rev=dev#e742c4b4a2c383729e678dddd43af3e0a4468af7" }
 dependencies = [
     { name = "pfmsoft-indexed-string" },
     { name = "pfmsoft-pdf2txt" },
