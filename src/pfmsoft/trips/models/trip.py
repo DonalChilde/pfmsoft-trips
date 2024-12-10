@@ -8,7 +8,7 @@ from pydantic import AwareDatetime, BaseModel
 from pfmsoft.trips.airports import airport_from_iata
 from pfmsoft.trips.snippets.file.check_file import check_file
 
-from .utc_datetime_validator import UtcDatetime
+from ..snippets.pydantic.utc_datetime_validator import UtcDatetime
 
 
 class Position(BaseModel):
