@@ -29,6 +29,8 @@ dependencies = [
     "pydantic",
     "pbs-parse@git+https://github.com/donalchilde/pbs-parse@dev",
     "airportsdata",
+    "pydantic-extra-types",
+    "tzdata",
 ]
 
 # [project.scripts]
