@@ -40,17 +40,11 @@ def test_non_utc_datetime():
 
 
 def test_utc():
+    """Test a utc datetime."""
     utc = datetime.now(tz=UTC)
     aware = AwareDatetime(utc=utc, tz_name="UTC")
     logger.info(aware)
     logger.info(repr(aware))
-    logger.info(repr(AwareDatetime(utc=aware.localize(), tz_name="UTC")))
-    assert aware.tzinfo.utcoffset(None) == UTC.utcoffset(None)
-    assert aware.utc == aware.localize()
-
-
-# def test_log_tz_names():
-#     logger.info(available_timezones())
-#     utc_names = ["UTC", "Zulu", "Etc/UTC"]
-#     foo = datetime.now(UTC)
-#     assert foo.tzname() in utc_names
+    logger.info(repr(AwareDatetime(utc=aware.localized, tz_name="UTC")))
+    assert aware.utc.utcoffset() == UTC.utcoffset(None)
+    assert aware.utc == aware.localized

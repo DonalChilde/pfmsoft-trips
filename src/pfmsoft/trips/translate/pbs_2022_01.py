@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 
 import pbs_parse.pbs_2022_01.models.structured as ST
 
-from pfmsoft.trips.models import trip as model
+from pfmsoft.trips.models.pydantic import trip as model
 
 logger = logging.getLogger(__name__)
 

@@ -7,7 +7,7 @@ from pathlib import Path
 import pytest
 from pbs_parse.pbs_2022_01.models.structured import STRUCTURED_TRIP_SERIALIZER
 
-from pfmsoft.trips.models.trip import serialize_trip
+from pfmsoft.trips.models.pydantic.trip import serialize_trip
 from pfmsoft.trips.translate import pbs_2022_01 as pbs
 from tests.resources.models.file_system_resource import FileResource
 from tests.resources.pbs_2022_01.structured_trips import STRUCTURED_TRIPS_ANCHOR

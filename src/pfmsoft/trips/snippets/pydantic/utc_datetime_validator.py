@@ -1,25 +1,21 @@
 """Pydantic validator for utc datetime."""
 
-from datetime import timedelta
 from typing import Annotated
 
 from pydantic import AwareDatetime
 from pydantic.functional_validators import AfterValidator
 
-utc_names = ["UTC", "Zulu", "Etc/UTC"]
+from ..datetime.check_utc import UTC_NAMES, check_tz_name_for_utc
 
 
 def check_utc(v: AwareDatetime) -> AwareDatetime:
-    """Ensure value is an aware datetime that is UTC.
+    """Ensure value is an aware datetime that is UTC."""
+    if not check_tz_name_for_utc(v):
+        raise ValueError(
+            f"Value might be a non-utc datetime. tzname={v.tzname()} "
+            f"is not on approved list {UTC_NAMES!r} {v!r}"
+        )
 
-    This is a bit of a hack. May show true for some non-UTC times.
-    Possibly test for tz_name as one of the various utc names?
-    """
-    assert v.tzinfo is not None
-    assert v.utcoffset() == timedelta(), f"Value is a non-utc datetime. {v!r}"
-    assert (
-        v.tzname() in utc_names
-    ), f"Value is a non-utc datetime. tzname={v.tzname()} is not on approved list {utc_names!r} {v!r}"
     return v
 
 

@@ -1,7 +1,7 @@
 """Define a model for an AwareDatetime pydantic dataclass."""
 
+import dataclasses
 from datetime import datetime, timedelta
-from functools import cached_property
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from pydantic.dataclasses import dataclass
@@ -10,35 +10,48 @@ from pydantic_extra_types.timezone_name import TimeZoneName
 from .utc_datetime_validator import UtcDatetime
 
 
-@dataclass
+@dataclass(slots=True, frozen=True)
 class AwareDatetime:
-    """Represents a time zone aware UTC datetime.
+    """Represents a local time zone aware UTC datetime.
 
-    The datetime should be an aware datetime with a timezone of timezone.utc
-    The tz_name field stores the local time zone name.
-    Addition and subtraction of timedeltas is supported.
-    Enforced use of utc time should prevent ambiguous math.
+    AwareDatetime is used as a replacement for an non-utc aware datetime.
+
+    Math on non-utc aware datetimes can have unexpected results due to DST,
+    Where math with utc aware datetimes delivers consistent results.
+
+    Using AwareDatetime, the datetime is always kept in utc until needed in the
+    local timezone.
+
+    Args:
+        utc (UtcDatetime): An aware datetime with a timezone of 'UTC'.
+        tz_name (TimeZoneName): The str name of the localized timezone.
+
+    Raises:
+        ValueError: For an error in creating tzinfo from tz_name.
+
     """
 
     utc: UtcDatetime
     tz_name: TimeZoneName
+    localized: datetime = dataclasses.field(init=False)  # type: ignore
 
-    @cached_property
-    def tzinfo(self) -> ZoneInfo:
-        """Get the tzinfo."""
+    def __post_init__(self):
+        """Assign the localized field."""
         try:
-            return ZoneInfo(self.tz_name)
+            tzinfo = ZoneInfo(self.tz_name)
         except ZoneInfoNotFoundError as err:
             raise ValueError(
                 f"Tried to create an AwareDatetime with an invalid tz_name. {self!r}"
             ) from err
+        object.__setattr__(self, "localized", self.utc.astimezone(tzinfo))
 
-    def localize(self) -> datetime:
-        """Get the localized datetime."""
-        return self.utc.astimezone(tz=self.tzinfo)
+    @property
+    def localized(self) -> datetime:
+        """The localized datetime."""
+        return self.localized
 
     def replace(
-        self, utc: datetime | None = None, tz_name: str | None = None
+        self, utc: datetime | None = None, tz_name: TimeZoneName | None = None
     ) -> "AwareDatetime":
         """Replace some values and return a new AwareDatetime."""
         if utc is None:
@@ -73,7 +86,7 @@ class AwareDatetime:
 
     def __str__(self) -> str:
         """Get string representation."""
-        return f"AwareDatetime({self.localize().isoformat()}[{self.tz_name}])"
+        return f"AwareDatetime({self.localized.isoformat()}[{self.tz_name}])"
 
     def __repr__(self) -> str:
         """Get repr."""
@@ -82,74 +95,3 @@ class AwareDatetime:
             f"utc={self.utc!r}, tz_name={self.tz_name!r}"
             ")"
         )
-
-    # def __eq__(self, __value: object) -> bool:
-    #     """Test for equality."""
-    #     if isinstance(__value, Instant):
-    #         return (self.utc_date, self.tz_name) == (__value.utc_date, __value.tz_name)
-    #     return NotImplemented
-
-
-# class Instant(BaseModel):
-#     """Represents an instant in time.
-
-#     The datetime should be an aware datetime with a timezone of timezone.utc
-#     The tz_name field can store the local time zone name for conversions.
-#     Addition and subtraction of timedeltas is supported.
-#     Enforced use of utc time should prevent ambiguous math.
-#     """
-
-#     model_config = ConfigDict(frozen=True)
-
-#     utc_date: datetime
-#     tz_name: str
-
-#     def localize(self, tz_name: str | None = None) -> datetime:
-#         if tz_name is None:
-#             return self.utc_date.astimezone(tz=ZoneInfo(self.tz_name))
-#         return self.utc_date.astimezone(tz=ZoneInfo(tz_name))
-
-#     def replace(
-#         self, utc_date: datetime | None = None, tz_name: str | None = None
-#     ) -> "Instant":
-#         if utc_date is None and tz_name is None:
-#             raise ValueError("Must supply a value to replace to get new Instant.")
-#         if utc_date is not None and tz_name is not None:
-#             return Instant(utc_date=utc_date, tz_name=tz_name)
-#         if utc_date is not None:
-#             return Instant(utc_date=utc_date, tz_name=self.tz_name)
-#         assert tz_name is not None
-#         return Instant(utc_date=self.utc_date, tz_name=tz_name)
-
-#     def __copy__(self) -> "Instant":
-#         return Instant(utc_date=self.utc_date, tz_name=self.tz_name)
-
-#     def __add__(self, other: timedelta) -> "Instant":
-#         if not isinstance(other, timedelta):
-#             return NotImplemented
-#         new_instant = Instant(utc_date=self.utc_date + other, tz_name=self.tz_name)
-#         return new_instant
-
-#     def __sub__(self, other: timedelta) -> "Instant":
-#         if not isinstance(other, timedelta):
-#             return NotImplemented
-#         new_instant = Instant(utc_date=self.utc_date - other, tz_name=self.tz_name)
-#         return new_instant
-
-#     def __str__(self) -> str:
-#         return (
-#             f"utc_date={self.utc_date.isoformat()}, tz_name={self.tz_name}, "
-#             f"local={self.localize().isoformat()}"
-#         )
-
-#     def __repr__(self) -> str:
-#         return (
-#             f"{self.__class__.__qualname__}("
-#             f"utc_date={self.utc_date!r}, tz_name={self.tz_name!r}"
-#             ")"
-#         )
-
-#     def __eq__(self, __value: object) -> bool:
-#         if isinstance(__value, Instant):
-#             return (self.utc_date, self.tz_name) == (__value.utc_date, __value.tz_name)
-#         return NotImplemented
